@@ -221,8 +221,7 @@ button:focus {
 /*** KIERUNKI ***/
 
 #kierunki{
-    /* width: 100vw; */
-    min-height: 100vh;
+    height: 100vh;
     background-image: url(../img/Popular_destinations.jpg);
     background-size: cover;
     color: black;
@@ -245,30 +244,31 @@ button:focus {
     text-transform: uppercase;
 }
 
-.kierunki_list{
+.kierunki_items{
     background: rgba(255,255,255,0.6);
     border-radius: 32px;
     box-shadow: 0 0 24px #FFF;
     width: 60%;
-    height: 55%;
+    height: 40%;
     margin-bottom: 3%;
-}
-
-.kierunki_items{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2em;
 }
 
 .kierunki_items > a{
+    justify-self: center;
+    align-self: center;
     font-size: 2vw;
     width: 80%;
-    padding-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .kierunki_items > a > img{
     width: 15%;
     height: 15%;
+    margin-right: 10%;
 }
 
 
@@ -285,7 +285,7 @@ button:focus {
     color: rgb(51, 23, 3);
     text-align: center;
     text-transform: uppercase;
-    font-size: 3em;
+    font-size: 3vw;
 }
 
 #slajder .category-container {
