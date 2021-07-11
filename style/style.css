@@ -111,7 +111,7 @@ button:focus {
     margin-top: 15%;
     margin-bottom: 15%;
     font-size: 4vw;
-    letter-spacing: 0.5em;
+    letter-spacing: 0.5vw;
     font-weight: 400;
     text-transform: uppercase;
 }
@@ -275,9 +275,13 @@ button:focus {
 /*** Slajder ***/
 
 #slajder {
-    width: 60%;
+    /* width: 60%; */
     min-height: 100vh;
+}
+
+.slajder_wrapper{
     margin: 0 auto;
+    width: 60%
 }
 
 .block-title {
@@ -351,7 +355,7 @@ button:focus {
 }
 
 .products .product .product-content .product-content-title {
-    font-size: 1.2em;
+    font-size: 1.2vw
     font-weight: bold;
     font-family: "RobotoBold", sans-serif;
     color: rgb(51, 23, 3);
@@ -360,7 +364,7 @@ button:focus {
 }
 
 .products .product .product-content .product-content-description {
-    font-size: 1em;
+    font-size: 1vw
     font-family: "Roboto Light", sans-serif;
     color: rgb(51, 23, 3);
     line-height: 25px;
@@ -368,7 +372,7 @@ button:focus {
 }
 
 .products .product .product-content .product-content-description .daty{
-    font-size: 1.5em;
+    font-size: 1.5vw
 }
 
 .products .product .product-content .product-content-properties {
@@ -456,7 +460,7 @@ button:focus {
 }
 
 #gallery h2{
-    font-size: 3em;
+    font-size: 3vw;
     text-transform: uppercase;
     margin-bottom: 1%;
     margin-top: 3%;
@@ -464,7 +468,7 @@ button:focus {
 
 #gallery span{
     margin-bottom: 1%;
-    font-size: 2em;
+    font-size: 2vw;
 }
 
 .gallery_wrapper{
@@ -779,7 +783,7 @@ footer .menu li:last-child{
 }
 
 footer .menu li a{
-    font-size: 0.7em;
+    font-size: 0.7vw;
 }
 
 /*** RESPONSIVE START HERE ***/
