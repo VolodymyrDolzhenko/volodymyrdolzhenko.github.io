@@ -1,16 +1,16 @@
 $(document).ready(() => {
-    $('.category').click((e) => {
-        let currentElement = $(e.target);
-        $('.products-container').hide();
-        let id = currentElement.data('id');
-        $('#' + id).show();
-
-        $('.category').removeClass('active');
-        currentElement.addClass('active');
-
-        $('#' + id + ' .products').slick('refresh');
-        $('#' + id + ' .products-nav').slick('refresh');
-    });
+    // $('.category').click((e) => {
+    //     let currentElement = $(e.target);
+    //     $('.products-container').hide();
+    //     let id = currentElement.data('id');
+    //     $('#' + id).show();
+    //
+    //     $('.category').removeClass('active');
+    //     currentElement.addClass('active');
+    //
+    //     $('#' + id + ' .products').slick('refresh');
+    //     $('#' + id + ' .products-nav').slick('refresh');
+    // });
 
     $('#polska-container .products').slick({
         slidesToShow: 1,
@@ -95,9 +95,9 @@ $(document).ready(() => {
         ]
     });
 
+// Reserwacja //
 
-
-    $('.open-module').click(() => {
+    $('.open-module-kontakt').click(() => {
         $('#reservation-container').css('display', 'flex');
     });
 
@@ -109,15 +109,15 @@ $(document).ready(() => {
 
     $('#reserve-button > button').click(() => {
         let name = $('#name');
-        let count = $('#count');
+        let nazwisko = $('#nazwisko');
         let phone = $('#phone');
         let time = $('#time');
 
-        if (name.val() && count.val() && phone.val() && time.val()) {
+        if (name.val() && nazwisko.val() && phone.val() && time.val()) {
             $.ajax({
                 type: 'POST',
                 url: 'mail.php',
-                data: 'name=' + name.val() + '&count=' + count.val() + '&phone=' + phone.val() + '&time=' + time.val(),
+                data: 'name=' + name.val() + '&nazwisko=' + nazwisko.val() + '&phone=' + phone.val() + '&time=' + time.val(),
                 success: () => {
                     $('#reservation-sent').show();
                     $('#reservation-content').hide();

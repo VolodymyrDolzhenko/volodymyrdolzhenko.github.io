@@ -20,7 +20,7 @@
     <section id="main_screen">
             <nav class="navbar">
                 <div class="navbar_logo">
-                    <a href="#">
+                    <a href="#main_screen">
                         <img src="img/Logo.png" loading="lazy" alt="Logo" >
                     </a>
                 </div>
@@ -38,7 +38,7 @@
                 <h1 class="haslo"> podróżuj z nami</h1>
                 <div class="buttons">
                     <a href="#slajder" class="button main_button"><span>Wybrać wycieczkę</span></a>
-                    <button type="button" name="button" class="button second_button">Otrzymać konsultację</button>
+                    <button type="button" name="button" class="button second_button open-module-kontakt">Otrzymać konsultację</button>
                     <!-- <a href="#" class="button second_button"><span>Otrzymać konsultację</span></a> -->
                 </div>
             </div>
@@ -101,7 +101,7 @@
                             <img src="img/icons/compass.svg" alt="Kierunek" alt=""><span>Włochy</span>
                         </a>
                 </div>
-            <button type="button" name="button"class="button main_button">Otrzymać konsultację</button>
+            <button type="button" name="button"class="button main_button open-module-kontakt">Otrzymać konsultację</button>
         </section>
     <section id="slajder">
             <h2 class="block-title">Wybierz swoją wymarzoną wycieczkę</h2>
@@ -248,7 +248,7 @@
                                 <img src="images/bieszczady(2).jpg" loading="lazy" alt="">
                             </div>
                         </div>
-                        <button type="button" name="button" class="button main_button">Otrzymać konsultację</button>
+                        <button type="button" name="button" class="button main_button open-module-kontakt">Otrzymać konsultację</button>
                         <!-- <div class="button main_button">
                             <a href="#">Otrzymać konsultację</a>
                         </div> -->
@@ -608,12 +608,61 @@
                     </div>
                 </div>
             </div>
-            <div class="button_opinie button main_button"><a href="#">Zostawić opinię</a></div>
+            <div class="button_opinie button main_button open-module-opinie"><a href="#">Zostawić opinię</a></div>
+            <!-- <div id="reservation-container">
+                <div id="reservation">
+                    <div id="reservation-cancel">
+                        <img src="images/cancel.png" id="reservation-cancel-close" alt="">
+                    </div>
+                    <div id="reservation-content">
+                        <h2 class="block-title">забронировать столик</h2>
+                        <form action="https://azraelgf.github.io/burger/mail.php" id="reserve" method="post">
+                                    <div class="reserve-input">
+                                        <label for="name">Ваше имя</label>
+                                        <div>
+                                            <input type="text" name="name" id="name">
+                                        </div>
+                                    </div>
+                                    <div class="reserve-input">
+                                        <label for="count">Количество человек</label>
+                                        <div>
+                                            <input type="text" name="count" id="count">
+                                        </div>
+                                    </div>
+                                    <div class="reserve-input">
+                                        <label for="phone">Ваш телефон</label>
+                                        <div>
+                                            <input type="text" name="phone" id="phone">
+                                        </div>
+                                    </div>
+                                    <div class="reserve-input">
+                                        <label for="time">Желаемое время</label>
+                                        <div>
+                                            <input type="text" name="time" id="time">
+                                        </div>
+                                    </div>
+                                    <p id="reserve-error">
+                                        Заполните правильно все поля
+                                    </p>
+                                </form>
+                        <div id="reserve-button">
+                                    <button type="submit" class="btn-yellow">забронировать</button>
+                                </div>
+                    </div>
+                    <div id="reservation-sent">
+                        <h2 class="block-title">спасибо за то, что выбрали нас!</h2>
+                        <div id="reservation-sent-text">
+                                    Администратор BURGERCLUB свяжется с вами в течение 15 минут,
+                                    чтобы подтвердить бронирование
+                                </div>
+                    </div>
+                </div>
+            </div> -->
         </section>
     <section id="kontakt">
             <h2 class="block-title">masz pytania?</h2>
             <p>Skontaktuj się z nami</p>
-                <button type="button" name="button" class="button main_button">Otrzymać konsultację</button>
+                <button type="button" name="button" class="button main_button open-module-kontakt">Otrzymać konsultację</button>
                 <!-- <a href="#" class="button main_button"><span>Zamówić rozmowę</span></a> -->
              <div class="mapa_google">
                 <a href="https://www.google.com/maps/place/WroTravel/@51.1271647,16.9218245,12z/data=!3m1!4b1!4m5!3m4!1s0x470fc36f03218af9:0xfe228ee964d837b8!8m2!3d51.1270779!4d16.9918639">
@@ -635,7 +684,57 @@
                 <p class="VK"><img src="img/icons/vk.svg" alt=""></p>
                     <a href="https://vk.com/wrotravel" class="VK_data data">https://vk.com/wrotravel</a>
             </div>
-        </section>
+    </section>
+
+    <div id="reservation-container">
+        <div id="reservation">
+            <div id="reservation-cancel">
+                <img src="images/cancel.png" id="reservation-cancel-close" alt="">
+            </div>
+            <div id="reservation-content">
+                <h2 class="block-title">Otrzymać konsultację</h2>
+                <form action="https://azraelgf.github.io/burger/mail.php" id="reserve" method="post">
+                            <div class="reserve-input">
+                                <label for="name">Imię</label>
+                                <div>
+                                    <input type="text" name="name" id="name">
+                                </div>
+                            </div>
+                            <div class="reserve-input">
+                                <label for="nazwisko">Nazwisko</label>
+                                <div>
+                                    <input type="text" name="nazwisko" id="nazwisko">
+                                </div>
+                            </div>
+                            <div class="reserve-input">
+                                <label for="phone">E-mail</label>
+                                <div>
+                                    <input type="text" name="phone" id="phone">
+                                </div>
+                            </div>
+                            <div class="reserve-input">
+                                <label for="time">Numer telefonu</label>
+                                <div>
+                                    <input type="text" name="time" id="time">
+                                </div>
+                            </div>
+                            <p id="reserve-error">
+                                Заполните правильно все поля
+                            </p>
+                        </form>
+                <div id="reserve-button">
+                            <button type="submit" class="button main_button">Umówić polączenie</button>
+                        </div>
+            </div>
+            <div id="reservation-sent">
+                <h2 class="block-title">спасибо за то, что выбрали нас!</h2>
+                <div id="reservation-sent-text">
+                            Администратор BURGERCLUB свяжется с вами в течение 15 минут,
+                            чтобы подтвердить бронирование
+                        </div>
+            </div>
+        </div>
+    </div>
 </body>
 <footer>
             <ul class="menu">

@@ -786,4 +786,214 @@ footer .menu li a{
     font-size: 0.7vw;
 }
 
+/*** Reserwacja ***/
+
+#reservation-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#reservation {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(63, 63, 63);
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 40.67px 8.33px rgba(2, 7, 8, 1);
+    width: 584px;
+    padding: 45px 35px 70px 35px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#reservation > *{
+    color: black
+}
+
+#reservation #reservation-cancel {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#reservation h2.block-title {
+    font-size: 25px;
+}
+
+#reservation #reserve {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#reservation .reserve-input label {
+    font-size: 11px;
+    font-family: "Roboto", sans-serif;
+    /* color: rgb(255, 255, 255); */
+    margin-left: 20px;
+    line-height: 20px;
+}
+
+#reservation .reserve-input {
+    margin-top: 15px;
+}
+
+#reservation .reserve-input input {
+    border-width: 1px;
+    /* border-color: rgb(255, 255, 255); */
+    border-style: solid;
+    border-radius: 10px;
+    width: 248px;
+    height: 38px;
+    background: transparent;
+    /* color: white; */
+    outline: 0;
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+
+#reservation #reserve-button {
+    text-align: center;
+}
+
+#reservation #reserve-button button {
+    margin-top: 0;
+}
+#reservation #reservation-sent {
+    display: none;
+}
+#reservation #reservation-sent h2.block-title {
+    margin-top: 95px;
+}
+
+#reservation #reservation-sent-text {
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    /* color: rgb(255, 255, 255); */
+    text-align: center;
+    margin: 35px 0 110px 0;
+}
+
+#reservation #reserve-error {
+    color: red;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    margin: 10px;
+    display: none;
+}
+
+/*** zostawienie opinii  ***/
+
+/* #reservation-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.91);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#reservation {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(63, 63, 63);
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 0 0 40.67px 8.33px rgba(2, 7, 8, 1);
+    width: 584px;
+    padding: 45px 35px 70px 35px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#reservation #reservation-cancel {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#reservation h2.block-title {
+    font-size: 25px;
+}
+
+#reservation #reserve {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#reservation .reserve-input label {
+    font-size: 11px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+    line-height: 20px;
+}
+
+#reservation .reserve-input {
+    margin-top: 15px;
+}
+
+#reservation .reserve-input input {
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-radius: 10px;
+    width: 248px;
+    height: 38px;
+    background: transparent;
+    color: white;
+    outline: 0;
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+
+#reservation #reserve-button {
+    text-align: center;
+}
+
+#reservation #reserve-button button {
+    margin-top: 0;
+}
+#reservation #reservation-sent {
+    display: none;
+}
+#reservation #reservation-sent h2.block-title {
+    margin-top: 95px;
+}
+
+#reservation #reservation-sent-text {
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 35px 0 110px 0;
+}
+
+#reservation #reserve-error {
+    color: red;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    margin: 10px;
+    display: none;
+} */
+
 /*** RESPONSIVE START HERE ***/
