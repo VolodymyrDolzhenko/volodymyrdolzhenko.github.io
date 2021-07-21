@@ -802,20 +802,20 @@ footer .menu li a{
 }
 
 #reservation {
-    border-style: solid;
+    border: none;
+    /* border-style: solid;
     border-width: 1px;
-    border-color: rgb(63, 63, 63);
-    border-radius: 10px;
+    border-color: rgb(63, 63, 63); */
+    border-radius: 16px;
     background-color: #FFFFFF;
-    box-shadow: 0 0 40.67px 8.33px rgba(2, 7, 8, 1);
-    width: 584px;
+    box-shadow: 0 0 30px 8.33px rgba(255, 255, 255, 1);
+    width: 50%;
     padding: 45px 35px 70px 35px;
     position: relative;
     box-sizing: border-box;
 }
 
 #reservation > *{
-    color: black
 }
 
 #reservation #reservation-cancel {
@@ -826,7 +826,8 @@ footer .menu li a{
 }
 
 #reservation h2.block-title {
-    font-size: 25px;
+    font-size: 36px;
+    margin: 0;
 }
 
 #reservation #reserve {
@@ -837,8 +838,10 @@ footer .menu li a{
 }
 
 #reservation .reserve-input label {
-    font-size: 11px;
-    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
     /* color: rgb(255, 255, 255); */
     margin-left: 20px;
     line-height: 20px;
@@ -867,7 +870,8 @@ footer .menu li a{
 }
 
 #reservation #reserve-button button {
-    margin-top: 0;
+    width: 80%;
+    margin: 0 auto;
 }
 #reservation #reservation-sent {
     display: none;
