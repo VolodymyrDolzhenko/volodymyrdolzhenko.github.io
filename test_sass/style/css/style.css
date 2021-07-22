@@ -45,6 +45,7 @@ button:focus {
   background: url(../../img/Main_page.jpg);
   background-size: cover;
   height: 96vh;
+  width: 100vw;
   color: #fff;
 }
 
@@ -112,9 +113,10 @@ button:focus {
 }
 
 .haslo {
+  color: lightblue;
   margin-top: 30vh;
   margin-bottom: 15vh;
-  font-size: 10vh;
+  font-size: 7vw;
   letter-spacing: 0.5vw;
   font-weight: 400;
   text-transform: uppercase;
@@ -244,6 +246,7 @@ button:focus {
   background: url(../../img/Popular_destinations.jpg);
   background-size: cover;
   height: 96vh;
+  width: 100vw;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -324,6 +327,7 @@ button:focus {
   background: url(../../img/Forest.jpg);
   background-size: cover;
   height: 96vh;
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -552,6 +556,7 @@ button:focus {
   background: url(../../img/Road.png);
   background-size: cover;
   height: 96vh;
+  width: 100vw;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
