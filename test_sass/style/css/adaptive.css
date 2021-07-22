@@ -1,4 +1,9 @@
+@charset "UTF-8";
 @media screen and (max-width: 579px) {
+  .hasło {
+    font-size: 12vh;
+  }
+
   .nav_menu {
     top: 74px;
     position: fixed;
