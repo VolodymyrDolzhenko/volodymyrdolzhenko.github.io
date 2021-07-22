@@ -1,0 +1,54 @@
+//max-width 1229px
+
+@media screen and(max-width: 1229px){
+
+}
+
+//max-width 1024-1199px
+
+@media screen and(max-width: 1199px){
+
+}
+
+//max-width 768-1023px
+
+@media screen and(max-width: 1023px){
+
+}
+
+//max-width 580-767px
+
+@media screen and(max-width: 767px){
+
+}
+
+//max-width 480-579px
+
+@media screen and(max-width: 579px){
+    .nav_menu {
+        top: 74px;
+        position: fixed;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 10;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        display: none;
+        ul {
+            display: block;
+            width: auto;
+        }
+    }
+}
+
+//max-width 480-499px
+
+@media screen and(max-width: 499px){
+
+}
+
+//max-width 320-479px
+
+@media screen and(max-width: 479px){
+
+}
