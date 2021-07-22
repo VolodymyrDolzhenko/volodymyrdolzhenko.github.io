@@ -3,19 +3,4 @@
   .hasło {
     font-size: 12vh;
   }
-
-  .nav_menu {
-    top: 74px;
-    position: fixed;
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 10;
-    width: 100%;
-    text-align: center;
-    padding: 20px 0;
-    display: none;
-  }
-  .nav_menu ul {
-    display: block;
-    width: auto;
-  }
 }

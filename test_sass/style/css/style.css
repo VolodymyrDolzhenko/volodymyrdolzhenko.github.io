@@ -563,8 +563,8 @@ button:focus {
   background-size: cover;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(150px, 1fr))[4];
-  grid-template-columns: repeat(4, minmax(150px, 1fr));
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
   -ms-grid-rows: 15vh 5vh 15vh auto;
   grid-template-rows: 15vh 5vh 15vh auto;
 }

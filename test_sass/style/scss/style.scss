@@ -334,7 +334,7 @@ $main_color: #13BA6C;
     @include section_bg(url(../../img/Road.png));
     @include parallax;
     display: grid;
-    grid-template-columns: repeat(4, minmax(150px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 15vh 5vh 15vh auto;
     h2{
         justify-self: center;
