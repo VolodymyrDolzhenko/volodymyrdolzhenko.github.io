@@ -208,8 +208,8 @@ button:focus {
   height: 60vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(150px, 1fr) 2vh minmax(150px, 1fr) 2vh minmax(150px, 1fr) 2vh minmax(150px, 1fr);
-  grid-template-columns: repeat(4, minmax(150px, 1fr));
+  -ms-grid-columns: 1fr 2vh 1fr 2vh 1fr 2vh 1fr;
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 2vh;
 }
 .cechy_o_nas .cecha {
@@ -706,7 +706,7 @@ button:focus {
   -ms-grid-row-align: center;
       align-self: center;
   border-radius: 16px;
-  width: 45vw;
+  width: 40vw;
   height: 40vh;
   -ms-grid-column: 1;
       grid-column-start: 1;
@@ -729,7 +729,7 @@ button:focus {
   -ms-grid-row-align: center;
       align-self: center;
   border-radius: 16px;
-  width: 45vw;
+  width: 40vw;
   height: 40vh;
   background: rgba(255, 255, 255, 0.6);
   -webkit-box-shadow: 0 0 24px #FFF;
@@ -743,8 +743,8 @@ button:focus {
   display: -ms-grid;
   display: grid;
   font-weight: 500;
-  -ms-grid-columns: 45% auto;
-  grid-template-columns: 45% auto;
+  -ms-grid-columns: 40% auto;
+  grid-template-columns: 40% auto;
   -ms-grid-rows: (1fr)[7];
   grid-template-rows: repeat(7, 1fr);
 }
@@ -939,6 +939,11 @@ button:focus {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-area: 7/2/8/3;
+}
+
+.icon_dane_kontaktowe {
+  width: 5vw;
+  height: 5vh;
 }
 
 footer {
