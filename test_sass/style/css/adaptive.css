@@ -1,6 +1,5 @@
-@charset "UTF-8";
 @media screen and (max-width: 579px) {
-  .hasło {
-    font-size: 12vh;
+  .haslo {
+    font-size: 10vh;
   }
 }
