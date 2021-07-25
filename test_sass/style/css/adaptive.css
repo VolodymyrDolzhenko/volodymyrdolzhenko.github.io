@@ -1,5 +1,6 @@
-@media screen and (max-width: 579px) {
+@media screen and (max-width: 767px) {
   .haslo {
-    font-size: 10vh;
+    font-size: 8vh;
+    letter-spacing: none;
   }
 }
