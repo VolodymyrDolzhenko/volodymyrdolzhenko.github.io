@@ -238,7 +238,7 @@ $main_color: #13BA6C;
         background: rgba(255,255,255,0.6);
         border-radius: 32px;
         box-shadow: 0 0 24px #FFF;
-        width: 60vw;
+        width: 50vw;
         height: 40vh;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -361,7 +361,7 @@ $main_color: #13BA6C;
         grid-column-end: 4;
         grid-row-start: 3;
         background-color: $main_color;
-        width: 40vw;
+        // width: 40vw;
         &:hover{
             @include hover;
             box-shadow: 0 0 1.6vw #00FF33;

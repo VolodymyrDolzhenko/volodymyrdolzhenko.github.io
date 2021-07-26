@@ -285,7 +285,7 @@ button:focus {
   border-radius: 32px;
   -webkit-box-shadow: 0 0 24px #FFF;
           box-shadow: 0 0 24px #FFF;
-  width: 60vw;
+  width: 50vw;
   height: 40vh;
   display: -ms-grid;
   display: grid;
@@ -686,7 +686,6 @@ button:focus {
   -ms-grid-row: 3;
       grid-row-start: 3;
   background-color: #13BA6C;
-  width: 40vw;
 }
 #kontakt .button:hover {
   -webkit-transform: scale(1.1);
