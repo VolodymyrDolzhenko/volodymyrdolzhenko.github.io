@@ -211,8 +211,9 @@ $main_color: #13BA6C;
                 @include hover;
             }
         img{
-            width: 5vw;
-            height: 9vh;
+            width: 7vw;
+            // height: 9vh;
+            object-fit: cover;
         }
     }
 }
@@ -481,8 +482,8 @@ $main_color: #13BA6C;
 }
 
 .icon_dane_kontaktowe{
-    width: 5vw;
-    height: 5vh;
+    width: 3vw;
+    object-fit: cover;
 }
 
 

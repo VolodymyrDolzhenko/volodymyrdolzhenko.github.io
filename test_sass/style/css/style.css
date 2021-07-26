@@ -236,8 +236,9 @@ button:focus {
   transition: 1.3s;
 }
 .cechy_o_nas .cecha img {
-  width: 5vw;
-  height: 9vh;
+  width: 7vw;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #kierunki {
@@ -937,8 +938,9 @@ button:focus {
 }
 
 .icon_dane_kontaktowe {
-  width: 5vw;
-  height: 5vh;
+  width: 3vw;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 footer {

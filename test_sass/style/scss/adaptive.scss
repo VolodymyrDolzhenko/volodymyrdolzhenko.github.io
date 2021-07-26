@@ -26,7 +26,9 @@
         width: 40vw;
     }
     .button{
-        width: 50vw;
+        width: 80vw;
+        margin: 0 auto;
+
     }
     .haslo{
         font-size: 8vh;
@@ -35,30 +37,40 @@
     .buttons_blok{
         flex-wrap: wrap;
         .second_button{
-            margin-left: 0;
+            margin-left: auto;
             margin-top: 3vh;
         }
     }
+    .cechy_o_nas{
+        width: 90vw;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #kontakt{
+        height: 100%;
+        .mapa_google{
+            width: 80vw;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 4;
+
+        }
+
+        .dane_kontaktowe{
+            width: 80vw;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 5;
+            margin-top: 3vh;
+            margin-bottom: 3vh;
+        }
+    }
+
 }
 
 //max-width 480-579px
 
 @media screen and(max-width: 579px){
-
-    // .nav_menu {
-    //     top: 74px;
-    //     position: fixed;
-    //     background: rgba(0, 0, 0, 0.8);
-    //     z-index: 10;
-    //     width: 100%;
-    //     text-align: center;
-    //     padding: 20px 0;
-    //     display: none;
-    //     ul {
-    //         display: block;
-    //         width: auto;
-    //     }
-    // }
 }
 
 //max-width 480-499px

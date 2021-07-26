@@ -8,7 +8,8 @@
   }
 
   .button {
-    width: 50vw;
+    width: 80vw;
+    margin: 0 auto;
   }
 
   .haslo {
@@ -21,7 +22,37 @@
         flex-wrap: wrap;
   }
   .buttons_blok .second_button {
-    margin-left: 0;
+    margin-left: auto;
     margin-top: 3vh;
+  }
+
+  .cechy_o_nas {
+    width: 90vw;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #kontakt {
+    height: 100%;
+  }
+  #kontakt .mapa_google {
+    width: 80vw;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-column-span: 4;
+    grid-column-end: 5;
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+  }
+  #kontakt .dane_kontaktowe {
+    width: 80vw;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-column-span: 4;
+    grid-column-end: 5;
+    -ms-grid-row: 5;
+        grid-row-start: 5;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
   }
 }
