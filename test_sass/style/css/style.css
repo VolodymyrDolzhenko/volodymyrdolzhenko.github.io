@@ -45,7 +45,6 @@ button:focus {
   background: url(../../img/Main_page.jpg);
   background-size: cover;
   height: 96vh;
-  width: 100vw;
   color: #fff;
 }
 
@@ -66,10 +65,10 @@ button:focus {
 }
 
 .navbar_logo:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 1.3s;
+  transition: 1.3s;
 }
 
 .navbar_logo img {
@@ -98,10 +97,10 @@ button:focus {
   margin-left: 0;
 }
 .nav_menu ul li:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 1.3s;
+  transition: 1.3s;
 }
 .nav_menu ul li a:hover {
   text-shadow: 0 0 1.6vw #00FF33;
@@ -113,8 +112,6 @@ button:focus {
 }
 
 .haslo {
-  max-width: 90%;
-  max-height: 40%;
   margin-top: 30vh;
   margin-bottom: 15vh;
   font-size: 7vw;
@@ -152,7 +149,7 @@ button:focus {
 .button {
   border: none;
   height: 9vh;
-  min-width: 25vw;
+  width: 25vw;
   font-size: 3vh;
   border-radius: 4.2vw;
   color: #fff;
@@ -173,10 +170,10 @@ button:focus {
   outline: none;
 }
 .button:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 1.3s;
+  transition: 1.3s;
 }
 
 #o_nas {
@@ -233,10 +230,10 @@ button:focus {
           flex-grow: 4;
 }
 .cechy_o_nas .cecha:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 1.3s;
+  transition: 1.3s;
 }
 .cechy_o_nas .cecha img {
   width: 5vw;
@@ -247,7 +244,6 @@ button:focus {
   background: url(../../img/Popular_destinations.jpg);
   background-size: cover;
   height: 96vh;
-  width: 100vw;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -276,10 +272,10 @@ button:focus {
           box-shadow: 0 0 1.6vw #00FF33;
 }
 #kierunki button:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 1.3s;
+  transition: 1.3s;
   -webkit-box-shadow: 0 0 1.6vw #00FF33;
           box-shadow: 0 0 1.6vw #00FF33;
 }
@@ -313,10 +309,10 @@ button:focus {
           justify-content: center;
 }
 #kierunki .kierunki_items a:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 1.3s;
+  transition: 1.3s;
 }
 #kierunki .kierunki_items a img {
   width: 5vw;
@@ -328,7 +324,6 @@ button:focus {
   background: url(../../img/Forest.jpg);
   background-size: cover;
   height: 96vh;
-  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -557,7 +552,6 @@ button:focus {
   background: url(../../img/Road.png);
   background-size: cover;
   height: 96vh;
-  width: 100vw;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -694,10 +688,10 @@ button:focus {
   width: 40vw;
 }
 #kontakt .button:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 1.3s;
+  transition: 1.3s;
   -webkit-box-shadow: 0 0 1.6vw #00FF33;
           box-shadow: 0 0 1.6vw #00FF33;
 }
@@ -1072,10 +1066,10 @@ footer .nav_menu .menu li {
   width: 30vw;
 }
 #reservation #reserve-button button:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 1.3s;
+  transition: 1.3s;
   -webkit-box-shadow: 0 0 1.6vw #00FF33;
           box-shadow: 0 0 1.6vw #00FF33;
 }

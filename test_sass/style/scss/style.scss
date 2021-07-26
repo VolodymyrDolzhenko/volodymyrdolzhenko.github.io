@@ -53,8 +53,8 @@ $main_color: #13BA6C;
 }
 
 @mixin hover{
-    transform: scale(1.2);
-    transition: 1.5s;
+    transform: scale(1.1);
+    transition: 1.3s;
 }
 
 @mixin text-shadow{
@@ -64,7 +64,7 @@ $main_color: #13BA6C;
 @mixin button{
     border: none;
     height: 9vh;
-    min-width: 25vw;
+    width: 25vw;
     font-size: 3vh;
     border-radius: 4.2vw;
     color: #fff;
@@ -102,7 +102,6 @@ $main_color: #13BA6C;
     background: $background;
     background-size: cover;
     height: 96vh;
-    width: 100vw;
 }
 
 #main_screen{
@@ -155,9 +154,8 @@ $main_color: #13BA6C;
 }
 
 .haslo{
-    max-width: 90%;
-    max-height: 40%;
-    // color: lightblue;
+    // max-width: 90%;
+    // max-height: 40%;
     margin-top: 30vh;
     margin-bottom: 15vh;
     font-size: 7vw;
