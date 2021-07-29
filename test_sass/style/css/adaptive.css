@@ -1,35 +1,45 @@
 @media screen and (max-width: 767px) {
-
   .navbar .navbar_logo {
     width: 100%;
   }
 
   .nav_menu_top {
-        position: fixed;
-        left: -100%;
-        top: 8vh;
-        flex-direction: column;
-        justify-content: center;
-        background-color: yellow;
-        width: 100%;
-        transition: 0.3s;
-        background: rgba(0,0,0,0.4);
-    }
+    position: fixed;
+    left: -100%;
+    top: 8vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .nav_menu_top li {
+    font-size: 2.5vh;
+  }
+  .nav_menu_top .nav-link:first-child {
+    display: none;
+  }
 
-    .nav_menu_top.active {
-        left: 0;
-    }
+  .nav_menu_top.active {
+    left: 0;
+  }
 
-    .nav-link {
-        text-align:center;
-        width: 40vw;
-        margin: 1vh 0;
-    }
+  .nav-link {
+    text-align: center;
+    width: 40vw;
+    margin: 1vh 0;
+  }
 
-    .toggleButton {
-        display: block;
-        cursor: pointer;
-    }
+  .toggleButton {
+    display: block;
+    cursor: pointer;
+  }
 
   .button {
     width: 70vw;
