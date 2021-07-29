@@ -106,7 +106,8 @@ button:focus {
 .nav_menu li a:hover {
   text-shadow: 0 0 1.6vw #00FF33;
 }
-.nav_menu .toggleButton {
+
+.toggleButton {
   display: none;
 }
 

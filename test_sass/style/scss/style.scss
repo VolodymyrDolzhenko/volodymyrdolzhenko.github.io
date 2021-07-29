@@ -147,11 +147,10 @@ $main_color: #13BA6C;
                 @include text-shadow;
             }
         }
-        .toggleButton{
-            display: none;
-        }
 }
-
+.toggleButton{
+    display: none;
+}
 
 .main_screen_content{
     padding-left: 5vw;
