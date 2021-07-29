@@ -1,14 +1,38 @@
 @media screen and (max-width: 767px) {
-  .navbar {
-    height: 10vh;
+
+  .navbar .navbar_logo {
+    width: 100%;
   }
 
-  .navbar_logo img {
-    width: 40vw;
-  }
+  .nav_menu_top {
+        position: fixed;
+        left: -100%;
+        top: 8vh;
+        flex-direction: column;
+        justify-content: center;
+        background-color: yellow;
+        width: 100%;
+        transition: 0.3s;
+        background: rgba(0,0,0,0.4);
+    }
+
+    .nav_menu_top.active {
+        left: 0;
+    }
+
+    .nav-link {
+        text-align:center;
+        width: 40vw;
+        margin: 1vh 0;
+    }
+
+    .toggleButton {
+        display: block;
+        cursor: pointer;
+    }
 
   .button {
-    width: 80vw;
+    width: 70vw;
     margin: 0 auto;
   }
 
@@ -55,8 +79,7 @@
     margin-top: 3vh;
     margin-bottom: 3vh;
   }
-}
-@media screen and (max-width: 579px) {
+
   #kierunki .kierunki_items {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -77,6 +100,9 @@
         align-self: flex-start;
     margin-left: 25%;
   }
+  #kierunki .button {
+    width: 70vw;
+  }
 
   #kontakt {
     -ms-grid-columns: (1fr)[3];
@@ -95,12 +121,33 @@
     grid-column-end: 4;
   }
   #kontakt .button {
-    width: 80vw;
+    width: 70vw;
     -ms-grid-column: 1;
         grid-column-start: 1;
     -ms-grid-column-span: 3;
     grid-column-end: 4;
     -ms-grid-row: 3;
         grid-row-start: 3;
+  }
+
+  .gallery_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .gallery_wrapper img {
+    height: 70vh;
+  }
+
+  .gallery_wrapper_grid-item2,
+.gallery_wrapper_grid-item4,
+.gallery_wrapper_grid-item5,
+.gallery_wrapper_grid-item6,
+.gallery_wrapper_grid-item3 {
+    display: none;
   }
 }

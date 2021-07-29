@@ -1,4 +1,6 @@
 * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -16,8 +18,6 @@ li {
 body {
   font-family: "Open Sans", sans-serif;
   background: #FFF;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 button {
@@ -61,7 +61,7 @@ button:focus {
   padding-left: 5vw;
   padding-right: 5vw;
   background: rgba(0, 0, 0, 0.4);
-  max-height: 8vh;
+  height: 8vh;
 }
 
 .navbar_logo:hover {
@@ -72,38 +72,42 @@ button:focus {
 }
 
 .navbar_logo img {
-  width: 14vw;
+  height: 8vh;
+  margin: auto 0;
 }
 
 .nav_menu {
-  width: 60vw;
-}
-.nav_menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 60vw;
 }
-.nav_menu ul li {
-  font-size: 1.5vw;
+.nav_menu li {
+  display: inline-block;
+  font-size: 1.5vh;
   font-weight: 100;
 }
-.nav_menu ul li:first-child {
+.nav_menu li:first-child {
   margin-left: 0;
 }
-.nav_menu ul li:hover {
+.nav_menu li:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-transition: 1.3s;
   transition: 1.3s;
 }
-.nav_menu ul li a:hover {
+.nav_menu li a:hover {
   text-shadow: 0 0 1.6vw #00FF33;
+}
+.nav_menu .toggleButton {
+  display: none;
 }
 
 .main_screen_content {
@@ -264,6 +268,7 @@ button:focus {
 #kierunki button {
   background-color: #13BA6C;
   margin-top: 8vh;
+  width: 40vw;
 }
 #kierunki button .main_button {
   background-color: #13BA6C;
@@ -686,6 +691,7 @@ button:focus {
   -ms-grid-row: 3;
       grid-row-start: 3;
   background-color: #13BA6C;
+  width: 40vw;
 }
 #kontakt .button:hover {
   -webkit-transform: scale(1.1);
@@ -812,13 +818,6 @@ button:focus {
 .dane_kontaktowe > *:nth-child(14) {
   -ms-grid-row: 7;
   -ms-grid-column: 2;
-}
-.dane_kontaktowe * {
-  -ms-grid-column-align: left;
-      justify-self: left;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
 }
 .dane_kontaktowe h3 {
   -ms-grid-column-align: center;
@@ -967,7 +966,8 @@ footer .nav_menu {
   width: 30vw;
   margin-bottom: 1vh;
 }
-footer .nav_menu .menu li {
+footer .nav_menu li {
+  margin-left: 2vw;
   font-size: 1vw;
 }
 
@@ -1000,8 +1000,6 @@ footer .nav_menu .menu li {
   width: 50%;
   padding: 45px 35px 70px 35px;
   position: relative;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 #reservation #reservation-cancel {
@@ -1053,8 +1051,6 @@ footer .nav_menu .menu li {
   /* color: white; */
   outline: 0;
   padding: 12px 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 #reservation #reserve-button {

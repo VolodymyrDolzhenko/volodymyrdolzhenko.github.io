@@ -1,4 +1,22 @@
+// function myFunction() {
+//     // alert("hello");
+//     var x = document.getElementByClassName("menu_lines");
+//     if (x.className === "nav_menu") {
+//       x.className = ".nav_menu_active";
+//     } else {
+//       x.className = "nav_menu";
+//     }
+// }
+
 $(document).ready(() => {
+    $(".toggleButton").click(() => {
+        $(".toggleButton").toggleClass('active');
+        $(".nav_menu_top").toggleClass('active');
+    });
+    $(".nav-link").click(() => {
+        $(".toggleButton").removeClass('active');
+        $(".nav_menu_top").removeClass('active');
+    });
     // $('.category').click((e) => {
     //     let currentElement = $(e.target);
     //     $('.products-container').hide();

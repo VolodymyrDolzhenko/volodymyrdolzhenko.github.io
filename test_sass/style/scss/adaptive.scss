@@ -1,34 +1,35 @@
-//max-width 1229px
-
-@media screen and(max-width: 1229px){
-
-}
-
-//max-width 1024-1199px
-
-@media screen and(max-width: 1199px){
-
-}
-
-//max-width 768-1023px
-
-@media screen and(max-width: 1023px){
-
-}
-
 //max-width 580-767px
 
 @media screen and(max-width: 767px){
+    .menu_lines{
+        display: block;
+        position: absolute;
+        right: 5vw;
+        top: 2vh;
+    }
     .navbar{
-        height: 10vh;
+        flex-direction: column;
+        .navbar_logo{
+            width: 100%;
+        }
     }
-    .navbar_logo img {
-        width: 40vw;
+    .nav_menu{
+        display: none;
+        width: 30vw;
+        align-self: flex-end;
+        flex-direction: column;
+        li{
+            margin-bottom: 2vh;
+        }
     }
-    .button{
-        width: 80vw;
-        margin: 0 auto;
 
+    .nav_menu_active{
+        display: block;
+    }
+
+    .button{
+        width: 70vw;
+        margin: 0 auto;
     }
     .haslo{
         font-size: 8vh;
@@ -66,11 +67,6 @@
         }
     }
 
-}
-
-//max-width 480-579px
-
-@media screen and(max-width: 579px){
     #kierunki{
     .kierunki_items{
         display: flex;
@@ -81,39 +77,50 @@
             align-self: flex-start;
             margin-left: 25%;
         }
-
+        }
+        .button{
+            width: 70vw;
+        }
     }
+
+    #kontakt{
+        grid-template-columns: repeat(3, 1fr);
+        h2{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .section_header_p{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .button {
+            width: 70vw;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 3;
+        }
+    }
+    .gallery_wrapper{
+        display: flex;
+        flex-direction: column;
+        img {
+            height: 70vh;
+        }
+    }
+
+    .gallery_wrapper_grid-item2,
+    .gallery_wrapper_grid-item4,
+    .gallery_wrapper_grid-item5,
+    .gallery_wrapper_grid-item6,
+    .gallery_wrapper_grid-item3{
+        display: none;
+    }
+
 }
 
-#kontakt{
-    grid-template-columns: repeat(3, 1fr);
-    h2{
-        grid-column-start: 1;
-        grid-column-end: 4;
-    }
-    .section_header_p{
-        grid-column-start: 1;
-        grid-column-end: 4;
-    }
-    .button {
-        width: 80vw;
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 3;
-    }
-}
-}
+//max-width 480-579px
 
+@media screen and(max-width: 579px){
 
-
-//max-width 480-499px
-
-@media screen and(max-width: 499px){
-
-}
-
-//max-width 320-479px
-
-@media screen and(max-width: 479px){
 
 }

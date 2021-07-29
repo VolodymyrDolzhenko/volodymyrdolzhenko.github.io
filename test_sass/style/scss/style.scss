@@ -1,4 +1,5 @@
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -16,7 +17,6 @@ li{
 body {
     font-family: 'Open Sans', sans-serif;
     background: #FFF;
-    box-sizing: border-box;
 }
 
 button{
@@ -116,7 +116,8 @@ $main_color: #13BA6C;
     padding-left: 5vw;
     padding-right: 5vw;
     background: rgba(0,0,0,0.4);
-    max-height: 8vh;
+    height: 8vh;
+
 }
 
 .navbar_logo:hover{
@@ -124,16 +125,18 @@ $main_color: #13BA6C;
 }
 
 .navbar_logo img {
-    width: 14vw;
+    height: 8vh;
+    margin: auto 0;
 }
 
 .nav_menu{
-    width: 60vw;
-    ul{
     @include flex;
+    align-items: center;
     justify-content: space-between;
+    width: 60vw;
         li{
-            font-size: 1.5vw;
+            display: inline-block;
+            font-size: 1.5vh;
             font-weight: 100;
             &:first-child{
                 margin-left: 0;
@@ -144,7 +147,9 @@ $main_color: #13BA6C;
                 @include text-shadow;
             }
         }
-    }
+        .toggleButton{
+            display: none;
+        }
 }
 
 
@@ -229,6 +234,7 @@ $main_color: #13BA6C;
         @include main_button;
         background-color: $main_color;
         margin-top: 8vh;
+        width: 40vw;
         &:hover{
             @include hover;
             box-shadow: 0 0 1.6vw #00FF33;
@@ -361,7 +367,7 @@ $main_color: #13BA6C;
         grid-column-end: 4;
         grid-row-start: 3;
         background-color: $main_color;
-        // width: 40vw;
+        width: 40vw;
         &:hover{
             @include hover;
             box-shadow: 0 0 1.6vw #00FF33;
@@ -403,10 +409,6 @@ $main_color: #13BA6C;
     font-weight: 500;
     grid-template-columns: 40% auto;
     grid-template-rows: repeat(7, 1fr);
-    *{
-        justify-self: left;
-        align-self: center;
-    }
     h3{
         justify-self: center;
         grid-area: 1 / 1 / 2 / 3;
@@ -503,12 +505,11 @@ footer{
     .nav_menu{
         width: 30vw;
         margin-bottom: 1vh;
-        .menu{
-            li{
+        li{
+            margin-left: 2vw;
             font-size: 1vw;
         }
         }
-    }
 }
 
 
@@ -538,7 +539,6 @@ footer{
     width: 50%;
     padding: 45px 35px 70px 35px;
     position: relative;
-    box-sizing: border-box;
 }
 
 #reservation #reservation-cancel {
@@ -585,7 +585,6 @@ footer{
     /* color: white; */
     outline: 0;
     padding: 12px 20px;
-    box-sizing: border-box;
 }
 
 #reservation #reserve-button {
