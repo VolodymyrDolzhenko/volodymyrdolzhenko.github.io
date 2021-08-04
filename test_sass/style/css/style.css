@@ -109,6 +109,8 @@ button:focus {
 }
 
 .toggleButton {
+  width: 10vw;
+  height: 8vh;
   display: none;
 }
 
