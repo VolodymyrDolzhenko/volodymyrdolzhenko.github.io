@@ -300,6 +300,7 @@ button:focus {
   grid-template-columns: repeat(2, 1fr);
 }
 #kierunki .kierunki_items a {
+  color: black;
   -ms-grid-column-align: center;
       justify-self: center;
   -ms-flex-item-align: center;
@@ -348,11 +349,25 @@ button:focus {
           flex-direction: column;
   text-align: center;
 }
-#gallery p {
+#gallery .napis_gallery {
+  border-radius: 2vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  -webkit-box-shadow: 0 0 2vw 0.5vw rgba(255, 255, 255, 0.4);
+          box-shadow: 0 0 2vw 0.5vw rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.4);
+}
+#gallery .tekst_gallery {
   margin-bottom: 3vh;
   font-size: 2vh;
   letter-spacing: 0.1vw;
   font-weight: 100;
+  border-radius: 2vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  -webkit-box-shadow: 0 0 2vw 0.5vw rgba(255, 255, 255, 0.4);
+          box-shadow: 0 0 2vw 0.5vw rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.4);
 }
 
 .gallery_wrapper {
