@@ -215,10 +215,12 @@ $main_color: #13BA6C;
             &:hover{
                 @include hover;
             }
-        img{
-            width: 7vw;
-            // height: 9vh;
-            object-fit: cover;
+        i{
+            color: $main_color;
+            // font-size: 15vh;
+        }
+        p{
+            margin-top: 3vh
         }
     }
 }
@@ -258,9 +260,8 @@ $main_color: #13BA6C;
                 &:hover{
                     @include hover;
                 }
-                img{
-                    width: 5vw;
-                    height: 5vh;
+                i{
+                    color: $main_color;
                     margin-right: 2vw;
                 }
             }
@@ -440,6 +441,9 @@ $main_color: #13BA6C;
         font-size: 2vh;
         align-self: center;
     }
+    i{
+        color: $main_color;
+    }
 
     .Godziny{
         justify-self: left;
@@ -498,10 +502,7 @@ $main_color: #13BA6C;
     }
 }
 
-.icon_dane_kontaktowe{
-    width: 3vw;
-    object-fit: cover;
-}
+
 
 
 // FOOTER
