@@ -1,5 +1,5 @@
 //max-width 580-767px
-@mixin hover{
+@mixin no-hover{
     transform: scale(1);
     transition: 0s;
 }
@@ -7,6 +7,12 @@
 @media screen and(max-width: 767px){
     .navbar .navbar_logo {
       width: 100%;
+    &:hover{
+        @include no-hover;
+    }
+}
+    .nav_menu:hover{
+        @include no-hover;
     }
     .nav_menu_top {
           position: fixed;
@@ -41,7 +47,9 @@
     .button{
         width: 70vw;
         margin: 0 auto;
-    }
+    &:hover{
+        @include no-hover;
+    }}
     .haslo{
         font-size: 8vh;
         margin-top: 20vh;
@@ -56,7 +64,9 @@
     .cechy_o_nas{
         width: 90vw;
         grid-template-columns: repeat(2, 1fr);
-    }
+    &:hover{
+        @include no-hover;
+    }}
 
     #kontakt{
         height: 100%;
@@ -87,12 +97,15 @@
         a{
             align-self: flex-start;
             margin-left: 25%;
-        }
-        }
+        &:hover{
+            @include no-hover;
+        }}
         .button{
             width: 70vw;
         }
     }
+}
+
 
     #kontakt{
         grid-template-columns: repeat(3, 1fr);
@@ -132,7 +145,9 @@
     #reserve-button{
         button{
             width: 90%;
-        }
+        &:hover{
+            @include no-hover;
+        }}
     }
 }
 #reserve .reserve-input  {

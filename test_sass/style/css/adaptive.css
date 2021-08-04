@@ -2,6 +2,19 @@
   .navbar .navbar_logo {
     width: 100%;
   }
+  .navbar .navbar_logo:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: 0s;
+    transition: 0s;
+  }
+
+  .nav_menu:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: 0s;
+    transition: 0s;
+  }
 
   .nav_menu_top {
     position: fixed;
@@ -42,6 +55,12 @@
     width: 70vw;
     margin: 0 auto;
   }
+  .button:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: 0s;
+    transition: 0s;
+  }
 
   .haslo {
     font-size: 8vh;
@@ -61,6 +80,12 @@
     width: 90vw;
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
+  }
+  .cechy_o_nas:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: 0s;
+    transition: 0s;
   }
 
   #kontakt {
@@ -107,7 +132,13 @@
         align-self: flex-start;
     margin-left: 25%;
   }
-  #kierunki .button {
+  #kierunki .kierunki_items a:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: 0s;
+    transition: 0s;
+  }
+  #kierunki .kierunki_items .button {
     width: 70vw;
   }
 
@@ -163,6 +194,12 @@
   }
   #reservation #reserve-button button {
     width: 90%;
+  }
+  #reservation #reserve-button button:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: 0s;
+    transition: 0s;
   }
 
   #reserve .reserve-input {
