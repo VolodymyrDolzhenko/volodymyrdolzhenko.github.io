@@ -419,10 +419,12 @@ $main_color: #13BA6C;
     p{
         margin-left: 2vw;
         font-size: 2vh;
+        align-self: center;
     }
     a{
         color: black;
         font-size: 2vh;
+        align-self: center;
     }
 
     .Godziny{
@@ -528,57 +530,51 @@ footer{
 }
 
 #reservation {
-    border: none;
     border-radius: 16px;
     background-color: #FFFFFF;
     box-shadow: 0 0 30px 8.33px rgba(255, 255, 255, 1);
-    width: 50%;
-    padding: 45px 35px 70px 35px;
+    width: 61vw;
+    min-height: 50vh;
+    padding: 3%;
     position: relative;
+    #reservation-cancel {
+        position: absolute;
+        top: 5%;
+        right: 2.5%;
+        cursor: pointer;
+    }
+    #reservation-content{
+        margin-bottom: 5vh;
+        h2{
+        text-align: center;
+        margin-top: 0;
+        }
+    }
 }
 
-#reservation #reservation-cancel {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-}
-
-#reservation h2.block-title {
-    font-size: 36px;
-    margin: 0;
-}
-
-#reservation #reserve {
-    margin: 30px 0;
+#reserve {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
-#reservation .reserve-input label {
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 40px;
-    text-align: center;
-    /* color: rgb(255, 255, 255); */
-    margin-left: 20px;
-    line-height: 20px;
+#reserve .reserve-input label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
 }
 
-#reservation .reserve-input {
-    margin-top: 15px;
+#reserve .reserve-input {
+    margin-top: 0.8vh;
 }
 
-#reservation .reserve-input input {
+#reserve .reserve-input input {
     border-width: 1px;
-    /* border-color: rgb(255, 255, 255); */
     border-style: solid;
     border-radius: 10px;
-    width: 248px;
-    height: 38px;
+    min-width: 25vw;
+    height: 5vh;
     background: transparent;
-    /* color: white; */
     outline: 0;
     padding: 12px 20px;
 }
@@ -587,7 +583,7 @@ footer{
     text-align: center;
 }
 
-#reservation #reserve-button button {
+#reserve-button button {
     margin: 0 auto;
     background-color: $main_color;
     width: 30vw;
@@ -596,14 +592,14 @@ footer{
         box-shadow: 0 0 1.6vw #00FF33;
     }
 }
-#reservation #reservation-sent {
+#reservation-sent {
     display: none;
 }
-#reservation #reservation-sent h2.block-title {
+#reservation-sent h2.block-title {
     margin-top: 95px;
 }
 
-#reservation #reservation-sent-text {
+#reservation-sent-text {
     font-size: 15px;
     font-family: "Roboto", sans-serif;
     /* color: rgb(255, 255, 255); */
@@ -611,7 +607,7 @@ footer{
     margin: 35px 0 110px 0;
 }
 
-#reservation #reserve-error {
+#reserve-error {
     color: red;
     font-size: 18px;
     text-align: center;

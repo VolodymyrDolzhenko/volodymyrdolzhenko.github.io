@@ -836,10 +836,16 @@ button:focus {
 .dane_kontaktowe p {
   margin-left: 2vw;
   font-size: 2vh;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 .dane_kontaktowe a {
   color: black;
   font-size: 2vh;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 .dane_kontaktowe .Godziny {
   -ms-grid-column-align: left;
@@ -990,66 +996,61 @@ footer .nav_menu li {
 }
 
 #reservation {
-  border: none;
-  /* border-style: solid;
-  border-width: 1px;
-  border-color: rgb(63, 63, 63); */
   border-radius: 16px;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0 0 30px 8.33px white;
           box-shadow: 0 0 30px 8.33px white;
-  width: 50%;
-  padding: 45px 35px 70px 35px;
+  width: 61vw;
+  min-height: 50vh;
+  padding: 3%;
   position: relative;
 }
-
 #reservation #reservation-cancel {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 5%;
+  right: 2.5%;
   cursor: pointer;
 }
-
-#reservation h2.block-title {
-  font-size: 36px;
-  margin: 0;
+#reservation #reservation-content {
+  margin-bottom: 5vh;
+}
+#reservation #reservation-content h2 {
+  text-align: center;
+  margin-top: 0;
 }
 
-#reservation #reserve {
-  margin: 30px 0;
+#reserve {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-#reservation .reserve-input label {
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 40px;
-  text-align: center;
-  /* color: rgb(255, 255, 255); */
-  margin-left: 20px;
-  line-height: 20px;
+#reserve .reserve-input label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: bold;
 }
 
-#reservation .reserve-input {
-  margin-top: 15px;
+#reserve .reserve-input {
+  margin-top: 0.8vh;
 }
 
-#reservation .reserve-input input {
+#reserve .reserve-input input {
   border-width: 1px;
-  /* border-color: rgb(255, 255, 255); */
   border-style: solid;
   border-radius: 10px;
-  width: 248px;
-  height: 38px;
+  min-width: 25vw;
+  height: 5vh;
   background: transparent;
-  /* color: white; */
   outline: 0;
   padding: 12px 20px;
 }
@@ -1058,12 +1059,12 @@ footer .nav_menu li {
   text-align: center;
 }
 
-#reservation #reserve-button button {
+#reserve-button button {
   margin: 0 auto;
   background-color: #13BA6C;
   width: 30vw;
 }
-#reservation #reserve-button button:hover {
+#reserve-button button:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-transition: 1.3s;
@@ -1072,15 +1073,15 @@ footer .nav_menu li {
           box-shadow: 0 0 1.6vw #00FF33;
 }
 
-#reservation #reservation-sent {
+#reservation-sent {
   display: none;
 }
 
-#reservation #reservation-sent h2.block-title {
+#reservation-sent h2.block-title {
   margin-top: 95px;
 }
 
-#reservation #reservation-sent-text {
+#reservation-sent-text {
   font-size: 15px;
   font-family: "Roboto", sans-serif;
   /* color: rgb(255, 255, 255); */
@@ -1088,7 +1089,7 @@ footer .nav_menu li {
   margin: 35px 0 110px 0;
 }
 
-#reservation #reserve-error {
+#reserve-error {
   color: red;
   font-size: 18px;
   text-align: center;
