@@ -13,6 +13,7 @@ $(document).ready(() => {
         $(".nav_menu_top").removeClass('active');
     });
 
+
     $(document).scroll(() => {
         $(".toggleButton").removeClass('active');
         $(".nav_menu_top").removeClass('active');
@@ -108,7 +109,7 @@ $(document).ready(() => {
     });
 
     $('#reservation-cancel-close, #reservation-container').click((e) => {
-        if (e.target.id === 'reservation-container' || e.target.id === 'reservation-cancel-close') {
+        if (e.target.id === 'reservation-container'|| e.target.id === 'reservation-cancel-close') {
             $('#reservation-container').hide();
         }
     });
@@ -137,14 +138,4 @@ $(document).ready(() => {
             $('#reserve-error').show();
         }
     });
-
-    $('#burger').click(() =>{
-        $('#header').toggleClass('menu-open');
-    });
-
-    $('#header #menu ul li').click(() =>{
-        $('#header').toggleClass('menu-open');
-    })
 })
-
-img.setAttribute('loading','lazy');

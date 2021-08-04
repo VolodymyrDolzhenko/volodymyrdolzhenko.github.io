@@ -122,6 +122,12 @@
     margin-top: 3vh;
     margin-bottom: 3vh;
   }
+  #kontakt .button:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: 0s;
+    transition: 0s;
+  }
 
   #kierunki .kierunki_items {
     display: -webkit-box;

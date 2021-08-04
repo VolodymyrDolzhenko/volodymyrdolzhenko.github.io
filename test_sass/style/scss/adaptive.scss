@@ -94,6 +94,9 @@
             margin-top: 3vh;
             margin-bottom: 3vh;
         }
+        .button:hover{
+            @include no-hover;
+        }
     }
 
     #kierunki{

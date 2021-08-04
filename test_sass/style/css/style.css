@@ -1020,7 +1020,7 @@ footer .nav_menu li {
   padding: 3%;
   position: relative;
 }
-#reservation #reservation-cancel {
+#reservation #reservation-cancel-close {
   position: absolute;
   top: 5%;
   right: 2.5%;
