@@ -1,4 +1,8 @@
 //max-width 580-767px
+@mixin hover{
+    transform: scale(1);
+    transition: 0s;
+}
 
 @media screen and(max-width: 767px){
     .navbar .navbar_logo {

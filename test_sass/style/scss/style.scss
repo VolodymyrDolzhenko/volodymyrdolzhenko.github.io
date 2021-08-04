@@ -28,6 +28,7 @@ h2{
     text-transform: uppercase;
     margin-bottom: 3vh;
     margin-top: 5vh;
+    text-align: center;
 }
 
 button,
@@ -66,7 +67,7 @@ $main_color: #13BA6C;
     height: 9vh;
     width: 25vw;
     font-size: 3vh;
-    border-radius: 4.2vw;
+    border-radius: 10vw;
     color: #fff;
     letter-spacing: 0.125vw;
     font-weight: 100;
@@ -241,7 +242,7 @@ $main_color: #13BA6C;
     }
     .kierunki_items{
         background: rgba(255,255,255,0.6);
-        border-radius: 32px;
+        border-radius: 2vw;
         box-shadow: 0 0 24px #FFF;
         width: 50vw;
         height: 40vh;
