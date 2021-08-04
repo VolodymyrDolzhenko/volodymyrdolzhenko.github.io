@@ -9,8 +9,8 @@
       width: 100%;
     &:hover{
         @include no-hover;
+        }
     }
-}
     .nav_menu:hover{
         @include no-hover;
     }
@@ -63,12 +63,18 @@
             margin-top: 3vh;
         }
     }
-    .cechy_o_nas{
-        width: 90vw;
-        grid-template-columns: repeat(2, 1fr);
-    &:hover{
-        @include no-hover;
-    }}
+    #o_nas{
+        .cechy_o_nas{
+            width: 90vw;
+            grid-template-columns: repeat(2, 1fr);
+            &:hover{
+                @include no-hover;
+            }
+            i{
+                font-size: 4vh;
+            }
+    }
+}
 
     #kontakt{
         height: 100%;
@@ -99,12 +105,15 @@
         a{
             align-self: flex-start;
             margin-left: 25%;
+            i{
+                font-size: 4vh;
+            }
         &:hover{
             @include no-hover;
         }}
-        .button{
-            width: 70vw;
-        }
+    }
+    .button{
+        width: 70vw;
     }
 }
 
@@ -125,13 +134,14 @@
             grid-column-end: 4;
             grid-row-start: 3;
         }
+        i{
+            font-size: 4vh
+        }
     }
+
     .gallery_wrapper{
         display: flex;
         flex-direction: column;
-        img {
-            height: 70vh;
-        }
     }
 
     .gallery_wrapper_grid-item2,

@@ -84,16 +84,19 @@
     margin-top: 3vh;
   }
 
-  .cechy_o_nas {
+  #o_nas .cechy_o_nas {
     width: 90vw;
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
   }
-  .cechy_o_nas:hover {
+  #o_nas .cechy_o_nas:hover {
     -webkit-transform: scale(1);
             transform: scale(1);
     -webkit-transition: 0s;
     transition: 0s;
+  }
+  #o_nas .cechy_o_nas i {
+    font-size: 4vh;
   }
 
   #kontakt {
@@ -140,13 +143,16 @@
         align-self: flex-start;
     margin-left: 25%;
   }
+  #kierunki .kierunki_items a i {
+    font-size: 4vh;
+  }
   #kierunki .kierunki_items a:hover {
     -webkit-transform: scale(1);
             transform: scale(1);
     -webkit-transition: 0s;
     transition: 0s;
   }
-  #kierunki .kierunki_items .button {
+  #kierunki .button {
     width: 70vw;
   }
 
@@ -175,6 +181,9 @@
     -ms-grid-row: 3;
         grid-row-start: 3;
   }
+  #kontakt i {
+    font-size: 4vh;
+  }
 
   .gallery_wrapper {
     display: -webkit-box;
@@ -184,9 +193,6 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .gallery_wrapper img {
-    height: 70vh;
   }
 
   .gallery_wrapper_grid-item2,
