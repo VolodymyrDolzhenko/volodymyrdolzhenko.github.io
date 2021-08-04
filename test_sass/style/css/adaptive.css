@@ -157,4 +157,18 @@
 .gallery_wrapper_grid-item3 {
     display: none;
   }
+
+  #reservation {
+    width: 90vw;
+  }
+  #reservation #reserve-button button {
+    width: 90%;
+  }
+
+  #reserve .reserve-input {
+    width: 90%;
+  }
+  #reserve .reserve-input input {
+    width: 100%;
+  }
 }

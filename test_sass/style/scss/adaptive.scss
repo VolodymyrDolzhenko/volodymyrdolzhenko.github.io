@@ -13,7 +13,7 @@
           width: 100%;
           transition: 0.3s;
           background: rgba(0,0,0,0.4);
-          
+
           .nav-link:first-child{
               display: none;
           }
@@ -122,6 +122,22 @@
     .gallery_wrapper_grid-item3{
         display: none;
     }
+
+#reservation{
+    width: 90vw;
+    #reserve-button{
+        button{
+            width: 90%;
+        }
+    }
+}
+#reserve .reserve-input  {
+    width: 90%;
+    input{
+        width: 100%;
+    }
+}
+
 
 }
 
