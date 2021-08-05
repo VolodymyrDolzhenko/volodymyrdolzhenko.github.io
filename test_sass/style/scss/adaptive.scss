@@ -80,6 +80,7 @@
         height: 100%;
         .mapa_google{
             width: 80vw;
+            height: 20vh;
             grid-column-start: 1;
             grid-column-end: 5;
             grid-row-start: 4;
@@ -145,6 +146,9 @@
     .gallery_wrapper{
         display: flex;
         flex-direction: column;
+        img{
+            height: 70vh;
+        }
     }
 
     .gallery_wrapper_grid-item2,
@@ -155,29 +159,27 @@
         display: none;
     }
 
-#reservation{
-    width: 90vw;
-    #reserve-button{
-        button{
-            width: 90%;
-        &:hover{
-            @include no-hover;
-        }}
+    #reservation{
+        width: 90vw;
+        #reserve-button{
+            button{
+                width: 90%;
+            &:hover{
+                @include no-hover;
+            }}
+        }
     }
-}
-#reserve .reserve-input  {
-    width: 90%;
-    input{
-        width: 100%;
+    #reserve .reserve-input  {
+        width: 90%;
+        input{
+            width: 100%;
+        }
     }
-}
 
-
-}
-
-//max-width 480-579px
-
-@media screen and(max-width: 579px){
-
-
+    footer{
+        .nav_menu{
+            display: none;
+        }
+        font-size: 3vw;
+    }
 }

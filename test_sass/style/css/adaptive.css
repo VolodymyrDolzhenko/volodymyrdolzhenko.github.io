@@ -104,6 +104,7 @@
   }
   #kontakt .mapa_google {
     width: 80vw;
+    height: 20vh;
     -ms-grid-column: 1;
         grid-column-start: 1;
     -ms-grid-column-span: 4;
@@ -200,6 +201,9 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .gallery_wrapper img {
+    height: 70vh;
+  }
 
   .gallery_wrapper_grid-item2,
 .gallery_wrapper_grid-item4,
@@ -227,5 +231,12 @@
   }
   #reserve .reserve-input input {
     width: 100%;
+  }
+
+  footer {
+    font-size: 3vw;
+  }
+  footer .nav_menu {
+    display: none;
   }
 }

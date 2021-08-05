@@ -355,9 +355,7 @@ button:focus {
   border-radius: 2vw;
   padding-left: 2vw;
   padding-right: 2vw;
-  -webkit-box-shadow: 0 0 2vw 0.5vw rgba(255, 255, 255, 0.4);
-          box-shadow: 0 0 2vw 0.5vw rgba(255, 255, 255, 0.4);
-  background: rgba(255, 255, 255, 0.4);
+  text-shadow: 0 0 3vw white;
 }
 #gallery .tekst_gallery {
   margin-bottom: 3vh;
@@ -367,9 +365,8 @@ button:focus {
   border-radius: 2vw;
   padding-left: 2vw;
   padding-right: 2vw;
-  -webkit-box-shadow: 0 0 2vw 0.5vw rgba(255, 255, 255, 0.4);
-          box-shadow: 0 0 2vw 0.5vw rgba(255, 255, 255, 0.4);
-  background: rgba(255, 255, 255, 0.4);
+  font-weight: 400;
+  text-shadow: 0 0 3vw white;
 }
 
 .gallery_wrapper {
