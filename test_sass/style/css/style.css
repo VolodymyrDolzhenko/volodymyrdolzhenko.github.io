@@ -1104,7 +1104,7 @@ button:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 3vh auto;
+  margin: 2vh auto;
 }
 
 .products-nav .product-nav {
