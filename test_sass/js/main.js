@@ -86,8 +86,8 @@ $('.category').click((e) => {
     });
 
     $('#czechy-container .products-nav').slick({
-        slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToShow: 3,
+        slidesToScroll: 3,
         asNavFor: '#czechy-container .products',
         infinite: false,
         dots: false,

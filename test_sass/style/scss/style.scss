@@ -526,12 +526,9 @@ $main_color: #13BA6C;
     .category-container {
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
     }
     .category {
-        font-size: 20px;
-        font-family: "Roboto Light", sans-serif;
-        color: rgb(51, 23, 3);
+        font-size: 1.2vw;
         text-align: center;
         border: 1px solid transparent;
         margin: 0 2vh;
@@ -548,8 +545,6 @@ $main_color: #13BA6C;
     }
 }
 
-
-
 .products .product {
     display: flex;
     justify-content: flex-end;
@@ -558,19 +553,23 @@ $main_color: #13BA6C;
     margin-top: 3vh;
 }
 .product1{
-    @include bg_slajder(url(../../images/Morskie_oko.jpg));
+    @include bg_slajder(url(../../images/polska/Morskie_oko.jpg));
+    background-color: lightgrey;
 }
 
 .product2{
-    @include bg_slajder(url(../../images/Krakow.jpg));
+    @include bg_slajder(url(../../images/polska/Krakow.jpg));
+    background-color: lightgrey;
 }
 
 .product3{
-    @include bg_slajder(url(../../images/gdansk.jpg));
+    @include bg_slajder(url(../../images/polska/gdansk.jpg));
+    background-color: lightgrey;
 }
 
 .product4{
-    @include bg_slajder(url(../../images/bieszczady.jpg))
+    @include bg_slajder(url(../../images/polska/bieszczady.jpg));
+    background-color: lightgrey;
 }
 
 
@@ -583,31 +582,29 @@ $main_color: #13BA6C;
     grid-template-rows: 15% 70% auto;
     .naglowek{
         justify-self: center;
+        text-align: center;
+        .product-content-title {
+            font-size: 1.5vw;
+            text-transform: uppercase;
+        }
+
+        .slogan{
+            font-size: 1.2vw;
+            font-weight: 400;
+        }
     }
-}
-
-.product-content-title {
-    font-size: 1.5vw;
-    text-transform: uppercase;
-}
-
-.slogan{
-    font-size: 1.2vw;
-    font-weight: 400;
-    text-align: center;
-
 }
 
 .product-content-description{
     font-size: 1vw;
-}
-
-.product-content-description .daty{
-    font-size: 1.5vw
-}
-
-.dates_value{
-    font-size: 1.5vw
+    display: grid;
+    grid-template-rows: 70% 15% 15%;
+    .daty{
+        font-size: 1.5vw
+    }
+    .dates_value{
+        font-size: 1.5vw;
+    }
 }
 
 .product-content-properties {
@@ -621,31 +618,23 @@ $main_color: #13BA6C;
     }
 }
 
-.products-container .products-footer{
-    display: flex;
-    justify-content: space-between;
-}
-
-.products-nav {
-    width:100%;
-    display: flex;
-    margin: 2vh auto;
-}
-
-.products-nav .product-nav {
-    width: 175px;
-    height: 75px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 15px;
-    opacity: 0.3;
-    img{
-        min-width: 100%;
-        overflow: hidden;
-        object-fit: cover;
+.products-nav{
+    .product-nav {
+        margin: 2vh auto;
+        height: 75px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        opacity: 0.3;
+        img{
+            width: 90%;
+            height: 100%;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
     }
 }
+
 
 .products-nav .product-nav.slick-current {
     opacity: 1;
@@ -656,18 +645,8 @@ $main_color: #13BA6C;
     opacity: 1;
 }
 
-.products-nav .product-nav img {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 8px;
-}
-
 .products-nav .product-nav:focus {
     outline: 0;
-}
-
-.slick-slide img {
-    display: inline;
 }
 
 #slajder .slick-prev:before {

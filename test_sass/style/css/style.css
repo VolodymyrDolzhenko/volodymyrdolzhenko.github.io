@@ -975,13 +975,9 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 #slajder .category {
-  font-size: 20px;
-  font-family: "Roboto Light", sans-serif;
-  color: #331703;
+  font-size: 1.2vw;
   text-align: center;
   border: 1px solid transparent;
   margin: 0 2vh;
@@ -1010,27 +1006,31 @@ h2 {
 }
 
 .product1 {
-  background: url(../../images/Morskie_oko.jpg);
+  background: url(../../images/polska/Morskie_oko.jpg);
   background-position: center;
   background-size: cover;
+  background-color: lightgrey;
 }
 
 .product2 {
-  background: url(../../images/Krakow.jpg);
+  background: url(../../images/polska/Krakow.jpg);
   background-position: center;
   background-size: cover;
+  background-color: lightgrey;
 }
 
 .product3 {
-  background: url(../../images/gdansk.jpg);
+  background: url(../../images/polska/gdansk.jpg);
   background-position: center;
   background-size: cover;
+  background-color: lightgrey;
 }
 
 .product4 {
-  background: url(../../images/bieszczady.jpg);
+  background: url(../../images/polska/bieszczady.jpg);
   background-position: center;
   background-size: cover;
+  background-color: lightgrey;
 }
 
 .product-content {
@@ -1046,28 +1046,28 @@ h2 {
 .product-content .naglowek {
   -ms-grid-column-align: center;
       justify-self: center;
+  text-align: center;
 }
-
-.product-content-title {
+.product-content .naglowek .product-content-title {
   font-size: 1.5vw;
   text-transform: uppercase;
 }
-
-.slogan {
+.product-content .naglowek .slogan {
   font-size: 1.2vw;
   font-weight: 400;
-  text-align: center;
 }
 
 .product-content-description {
   font-size: 1vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 70% 15% 15%;
+  grid-template-rows: 70% 15% 15%;
 }
-
 .product-content-description .daty {
   font-size: 1.5vw;
 }
-
-.dates_value {
+.product-content-description .dates_value {
   font-size: 1.5vw;
 }
 
@@ -1086,43 +1086,25 @@ h2 {
   margin-bottom: 1vh;
 }
 
-.products-container .products-footer {
+.products-nav .product-nav {
+  margin: 2vh auto;
+  height: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.products-nav {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 2vh auto;
-}
-
-.products-nav .product-nav {
-  width: 175px;
-  height: 75px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 15px;
   opacity: 0.3;
 }
 .products-nav .product-nav img {
-  min-width: 100%;
-  overflow: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  border-radius: 8px;
 }
 
 .products-nav .product-nav.slick-current {
@@ -1134,18 +1116,8 @@ h2 {
   opacity: 1;
 }
 
-.products-nav .product-nav img {
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 8px;
-}
-
 .products-nav .product-nav:focus {
   outline: 0;
-}
-
-.slick-slide img {
-  display: inline;
 }
 
 #slajder .slick-prev:before {
