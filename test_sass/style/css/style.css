@@ -960,6 +960,202 @@ button:focus {
   grid-area: 7/2/8/3;
 }
 
+#slajder .button {
+  background-color: #13BA6C;
+  margin: 0 auto 2vh auto;
+}
+#slajder .slajder_wrapper {
+  margin: 0 auto;
+  width: 60%;
+}
+#slajder .category-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#slajder .category {
+  font-size: 20px;
+  font-family: "Roboto Light", sans-serif;
+  color: #331703;
+  text-align: center;
+  border: 1px solid transparent;
+  margin: 0 2vh;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+#slajder .category:hover {
+  cursor: pointer;
+  border: 1px solid #331703;
+}
+#slajder .category.active {
+  border: 1px solid #331703;
+  font-family: RobotoBold, sans-serif;
+}
+
+.products .product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products .product .product-image {
+  max-width: 50%;
+  max-height: 40vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 5%;
+}
+
+.products .product .product-image img {
+  border-radius: 16px;
+}
+
+.products .product .product-content {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 3vh;
+}
+
+.product-content-title {
+  font-size: 1.5vw;
+  font-weight: bold;
+  font-family: "RobotoBold", sans-serif;
+  color: #331703;
+  text-transform: uppercase;
+}
+
+.product-content-description {
+  font-size: 1vw;
+  font-family: "Roboto Light", sans-serif;
+  color: #331703;
+  line-height: 25px;
+  margin-bottom: 50px;
+}
+
+.product-content-description .daty {
+  font-size: 1.5vw;
+}
+
+.product-content-properties {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.product-content-properties i {
+  display: block;
+  color: #13BA6C;
+  margin-bottom: 1vh;
+}
+
+.products .product .product-content .product-content-property span {
+  font-size: 20px;
+  font-family: "Roboto Light", sans-serif;
+  color: #331703;
+}
+
+.products-container .products-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.products-nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3vh auto;
+}
+
+.products-nav .product-nav {
+  width: 175px;
+  height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 15px;
+  opacity: 0.3;
+}
+.products-nav .product-nav img {
+  min-width: 100%;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.products-nav .product-nav.slick-current {
+  opacity: 1;
+}
+
+.products-nav .product-nav:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.products-nav .product-nav img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+}
+
+.products-nav .product-nav:focus {
+  outline: 0;
+}
+
+.slick-slide img {
+  display: inline;
+}
+
+#slajder .slick-prev:before {
+  content: url("../../images/prev.png");
+}
+
+#slajder .slick-next:before {
+  content: url("../../images/next.png");
+}
+
+#wlochy-container, #niemcy-container, #czechy-container {
+  display: none;
+}
+
 footer {
   padding: 1.5vh 0;
   background: #443428;
@@ -996,7 +1192,7 @@ footer .nav_menu li {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: 9999;
   -webkit-box-pack: center;
       -ms-flex-pack: center;

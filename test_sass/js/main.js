@@ -1,23 +1,43 @@
 
 $(document).ready(() => {
+
+    // nav_menu
+
     $(".toggleButton").click(() => {
         $(".toggleButton").toggleClass('active');
         $(".nav_menu_top").toggleClass('active');
     });
+
     $(".nav-link").click(() => {
         $(".toggleButton").removeClass('active');
         $(".nav_menu_top").removeClass('active');
     });
+
     $(".main_screen_content").click(() => {
         $(".toggleButton").removeClass('active');
         $(".nav_menu_top").removeClass('active');
     });
 
-
     $(document).scroll(() => {
         $(".toggleButton").removeClass('active');
         $(".nav_menu_top").removeClass('active');
     });
+
+
+// slajder
+
+$('.category').click((e) => {
+    let currentElement = $(e.target);
+    $('.products-container').hide();
+    let id = currentElement.data('id');
+    $('#' + id).show();
+
+    $('.category').removeClass('active');
+    currentElement.addClass('active');
+
+    $('#' + id + ' .products').slick('refresh');
+    $('#' + id + ' .products-nav').slick('refresh');
+});
 
     $('#polska-container .products').slick({
         slidesToShow: 1,
@@ -26,6 +46,7 @@ $(document).ready(() => {
         fade: true,
         asNavFor: '#polska-container .products-nav'
     });
+
     $('#polska-container .products-nav').slick({
         slidesToShow: 4,
         slidesToScroll: 4,
@@ -43,6 +64,7 @@ $(document).ready(() => {
         fade: true,
         asNavFor: '#niemcy-container .products-nav'
     });
+
     $('#niemcy-container .products-nav').slick({
         slidesToShow: 3,
         slidesToScroll: 3,
@@ -60,6 +82,7 @@ $(document).ready(() => {
         fade: true,
         asNavFor: '#czechy-container .products-nav'
     });
+
     $('#czechy-container .products-nav').slick({
         slidesToShow: 4,
         slidesToScroll: 4,
@@ -77,6 +100,7 @@ $(document).ready(() => {
         fade: true,
         asNavFor: '#wlochy-container .products-nav'
     });
+
     $('#wlochy-container .products-nav').slick({
         slidesToShow: 3,
         slidesToScroll: 3,
@@ -86,6 +110,9 @@ $(document).ready(() => {
         centerMode: false,
         focusOnSelect: true
     });
+
+// opinie
+
     $('#reviews').slick({
         infinite: true,
         slidesToShow: 2,
@@ -131,7 +158,7 @@ $(document).ready(() => {
                 },
                 error: () => {
                     $('#reservation-container').hide();
-                    alert('Ошибка бронирования. Свяжитесь, пожалуйста, по номеру телефона.');
+                    alert('Błąd. Zadzwoń, proszę, pod numer ..');
                 }
             });
         } else {
