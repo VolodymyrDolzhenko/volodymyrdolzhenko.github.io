@@ -538,32 +538,46 @@ $main_color: #13BA6C;
     }
 }
 
+@mixin bg($background,){
+    background: $background;
+    background-position: center;
+    background-size: cover;
+}
+
 .products .product {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    border-radius: 1vw;
+    height: 60vh;
+    margin-top: 3vh;
 }
 
-.products .product .product-image {
-    max-width: 50%;
-    max-height: 40vh;
-    object-fit: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 5%;
+.morskie_oko{
+    @include bg(url(../../images/Morskie_oko.png));
 }
 
-.products .product .product-image img {
-    border-radius: 16px;
+.krakow{
+    @include bg(url(../../images/krakow.jpg));
+}
+
+.gdansk{
+    @include bg(url(../../images/gdansk.jpg));
+}
+
+.bieszczady{
+    @include bg(url(../../images/bieszczady.jpg))
 }
 
 .products .product .product-content {
+    background-color: rgba(255,255,255,0.8);
     width: 45%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-top: 3vh;
+    padding: 2vw;
 }
 
 .product-content-title {
