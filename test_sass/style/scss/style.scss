@@ -23,6 +23,12 @@ button{
     border: none;
 }
 
+button,
+button:active,
+button:focus {
+    outline: none;
+}
+
 h2{
     font-size: 4vh;
     text-transform: uppercase;
@@ -31,11 +37,6 @@ h2{
     text-align: center;
 }
 
-button,
-button:active,
-button:focus {
-    outline: none;
-}
 
 $main_color: #13BA6C;
 
@@ -104,6 +105,14 @@ $main_color: #13BA6C;
     background-size: cover;
     height: 96vh;
 }
+
+@mixin bg_slajder($background,){
+    background: $background;
+    background-position: center;
+    background-size: cover;
+}
+
+// main_screen
 
 #main_screen{
     @include parallax;
@@ -517,6 +526,7 @@ $main_color: #13BA6C;
     .category-container {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
     }
     .category {
         font-size: 20px;
@@ -538,24 +548,17 @@ $main_color: #13BA6C;
     }
 }
 
-@mixin bg_slajder($background,){
-    background: $background;
-    background-position: center;
-    background-size: cover;
-}
+
 
 .products .product {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+    justify-content: flex-end;
     border-radius: 1vw;
     height: 60vh;
     margin-top: 3vh;
 }
-
 .product1{
-    @include bg_slajder(url(../../images/Morskie_oko.png));
+    @include bg_slajder(url(../../images/Morskie_oko.jpg));
 }
 
 .product2{
@@ -570,34 +573,33 @@ $main_color: #13BA6C;
     @include bg_slajder(url(../../images/bieszczady.jpg))
 }
 
-.products .product .product-content {
+
+.product-content {
     background-color: rgba(255,255,255,0.8);
     width: 45%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 2vw;
+    padding: 2vh;
+    display: grid;
+    grid-template-rows: 15% 70% auto;
+    .naglowek{
+        justify-self: center;
+    }
 }
 
 .product-content-title {
     font-size: 1.5vw;
-    font-weight: bold;
-    font-family: "RobotoBold", sans-serif;
-    color: rgb(51, 23, 3);
     text-transform: uppercase;
-    .slogan{
-        font-size: 1vw;
-        font-weight: 400;
-    }
 }
 
-.product-content-description {
+.slogan{
+    font-size: 1.2vw;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+.product-content-description{
     font-size: 1vw;
-    font-family: "Roboto Light", sans-serif;
-    color: rgb(51, 23, 3);
-    line-height: 25px;
-    margin-bottom: 50px;
 }
 
 .product-content-description .daty{
@@ -611,18 +613,12 @@ $main_color: #13BA6C;
 .product-content-properties {
     display: flex;
     justify-content: space-between;
+    text-align: center;
     i{
         display: block;
         color: $main_color;
         margin-bottom: 1vh;
     }
-}
-
-
-.products .product .product-content .product-content-property span {
-    font-size: 20px;
-    font-family: "Roboto Light", sans-serif;
-    color: rgb(51, 23, 3);
 }
 
 .products-container .products-footer{

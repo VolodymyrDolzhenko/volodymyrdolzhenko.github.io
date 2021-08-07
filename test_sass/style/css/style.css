@@ -24,18 +24,18 @@ button {
   border: none;
 }
 
+button,
+button:active,
+button:focus {
+  outline: none;
+}
+
 h2 {
   font-size: 4vh;
   text-transform: uppercase;
   margin-bottom: 3vh;
   margin-top: 5vh;
   text-align: center;
-}
-
-button,
-button:active,
-button:focus {
-  outline: none;
 }
 
 #main_screen {
@@ -975,6 +975,8 @@ button:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 #slajder .category {
   font-size: 20px;
@@ -999,19 +1001,16 @@ button:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   border-radius: 1vw;
   height: 60vh;
   margin-top: 3vh;
 }
 
 .product1 {
-  background: url(../../images/Morskie_oko.png);
+  background: url(../../images/Morskie_oko.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -1034,40 +1033,34 @@ button:focus {
   background-size: cover;
 }
 
-.products .product .product-content {
+.product-content {
   background-color: rgba(255, 255, 255, 0.8);
   width: 45%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 2vw;
+  padding: 2vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 15% 70% auto;
+  grid-template-rows: 15% 70% auto;
+}
+.product-content .naglowek {
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .product-content-title {
   font-size: 1.5vw;
-  font-weight: bold;
-  font-family: "RobotoBold", sans-serif;
-  color: #331703;
   text-transform: uppercase;
 }
-.product-content-title .slogan {
-  font-size: 1vw;
+
+.slogan {
+  font-size: 1.2vw;
   font-weight: 400;
+  text-align: center;
 }
 
 .product-content-description {
   font-size: 1vw;
-  font-family: "Roboto Light", sans-serif;
-  color: #331703;
-  line-height: 25px;
-  margin-bottom: 50px;
 }
 
 .product-content-description .daty {
@@ -1085,17 +1078,12 @@ button:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  text-align: center;
 }
 .product-content-properties i {
   display: block;
   color: #13BA6C;
   margin-bottom: 1vh;
-}
-
-.products .product .product-content .product-content-property span {
-  font-size: 20px;
-  font-family: "Roboto Light", sans-serif;
-  color: #331703;
 }
 
 .products-container .products-footer {

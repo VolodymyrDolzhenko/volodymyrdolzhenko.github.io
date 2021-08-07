@@ -24,6 +24,8 @@ $(document).ready(() => {
     });
 
 
+//kierunki
+
 // slajder
 
 $('.category').click((e) => {
