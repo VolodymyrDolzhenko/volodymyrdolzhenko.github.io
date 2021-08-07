@@ -1010,25 +1010,25 @@ button:focus {
   margin-top: 3vh;
 }
 
-.morskie_oko {
+.product1 {
   background: url(../../images/Morskie_oko.png);
   background-position: center;
   background-size: cover;
 }
 
-.krakow {
+.product2 {
   background: url(../../images/Krakow.jpg);
   background-position: center;
   background-size: cover;
 }
 
-.gdansk {
+.product3 {
   background: url(../../images/gdansk.jpg);
   background-position: center;
   background-size: cover;
 }
 
-.bieszczady {
+.product4 {
   background: url(../../images/bieszczady.jpg);
   background-position: center;
   background-size: cover;
@@ -1056,6 +1056,10 @@ button:focus {
   font-family: "RobotoBold", sans-serif;
   color: #331703;
   text-transform: uppercase;
+}
+.product-content-title .slogan {
+  font-size: 1vw;
+  font-weight: 400;
 }
 
 .product-content-description {

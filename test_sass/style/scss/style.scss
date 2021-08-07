@@ -538,7 +538,7 @@ $main_color: #13BA6C;
     }
 }
 
-@mixin bg($background,){
+@mixin bg_slajder($background,){
     background: $background;
     background-position: center;
     background-size: cover;
@@ -554,20 +554,20 @@ $main_color: #13BA6C;
     margin-top: 3vh;
 }
 
-.morskie_oko{
-    @include bg(url(../../images/Morskie_oko.png));
+.product1{
+    @include bg_slajder(url(../../images/Morskie_oko.png));
 }
 
-.krakow{
-    @include bg(url(../../images/Krakow.jpg));
+.product2{
+    @include bg_slajder(url(../../images/Krakow.jpg));
 }
 
-.gdansk{
-    @include bg(url(../../images/gdansk.jpg));
+.product3{
+    @include bg_slajder(url(../../images/gdansk.jpg));
 }
 
-.bieszczady{
-    @include bg(url(../../images/bieszczady.jpg))
+.product4{
+    @include bg_slajder(url(../../images/bieszczady.jpg))
 }
 
 .products .product .product-content {
@@ -586,6 +586,10 @@ $main_color: #13BA6C;
     font-family: "RobotoBold", sans-serif;
     color: rgb(51, 23, 3);
     text-transform: uppercase;
+    .slogan{
+        font-size: 1vw;
+        font-weight: 400;
+    }
 }
 
 .product-content-description {
