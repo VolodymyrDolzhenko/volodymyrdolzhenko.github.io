@@ -1070,6 +1070,10 @@ button:focus {
   font-size: 1.5vw;
 }
 
+.dates_value {
+  font-size: 1.5vw;
+}
+
 .product-content-properties {
   display: -webkit-box;
   display: -ms-flexbox;
