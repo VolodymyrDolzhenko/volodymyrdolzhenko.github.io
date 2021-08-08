@@ -1115,8 +1115,8 @@ h2 {
   padding: 2vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 15% 70% auto;
-  grid-template-rows: 15% 70% auto;
+  -ms-grid-rows: 15% 50% 20%;
+  grid-template-rows: 15% 50% 20%;
 }
 .product-content .naglowek {
   -ms-grid-column-align: center;
@@ -1134,10 +1134,6 @@ h2 {
 
 .product-content-description {
   font-size: 1vw;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 70% 15% 15%;
-  grid-template-rows: 70% 15% 15%;
 }
 .product-content-description .daty {
   font-size: 1.5vw;
@@ -1156,8 +1152,8 @@ h2 {
   text-align: center;
 }
 .product-content-properties i {
-  display: block;
   color: #13BA6C;
+  margin-bottom: 1vh;
 }
 
 #wlochy-container, #niemcy-container, #czechy-container {

@@ -630,7 +630,8 @@ $main_color: #13BA6C;
     height: 100%;
     padding: 2vh;
     display: grid;
-    grid-template-rows: 15% 70% auto;
+    grid-template-rows: 15% 50% 20% ;
+
     .naglowek{
         justify-self: center;
         text-align: center;
@@ -648,8 +649,6 @@ $main_color: #13BA6C;
 
 .product-content-description{
     font-size: 1vw;
-    display: grid;
-    grid-template-rows: 70% 15% 15%;
     .daty{
         font-size: 1.5vw
     }
@@ -663,9 +662,9 @@ $main_color: #13BA6C;
     justify-content: space-between;
     text-align: center;
     i{
-        display: block;
+        // display: block;
         color: $main_color;
-        // margin-bottom: 1vh;
+        margin-bottom: 1vh;
     }
 }
 

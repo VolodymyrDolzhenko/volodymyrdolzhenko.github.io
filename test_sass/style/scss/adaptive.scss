@@ -7,7 +7,6 @@
     background: $background;
     background-position: center;
     background-size: cover;
-    width: 100%;
     height: 55vh;
 }
 
@@ -105,6 +104,7 @@
 }
 
 #slajder{
+    height: 100vh;
     .slajder_wrapper{
         width: 90vw;
     }
@@ -148,9 +148,8 @@
         width: 100%;
         height: 45%;
         padding: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
+        grid-template-rows: 10% 30% 10% ;
+            grid-row-gap: 2vh;
         .naglowek{
             .product-content-title {
                 font-size: 2vh;
@@ -167,9 +166,10 @@
             display: none;
         }
         .daty{
-            font-size: 2vh
+            font-size: 2vh;
         }
         .dates_value{
+            display: inline-block;
             font-size: 2vh;
         }
     }
