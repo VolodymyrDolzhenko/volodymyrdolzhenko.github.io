@@ -961,8 +961,35 @@ h2 {
 }
 
 #slajder .button {
+  border: none;
+  height: 9vh;
+  width: 25vw;
+  font-size: 3vh;
+  border-radius: 10vw;
+  color: #fff;
+  letter-spacing: 0.125vw;
+  font-weight: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
   background-color: #13BA6C;
-  margin: 0 auto 2vh auto;
+  margin: 2vh auto;
+}
+#slajder .button:active, #slajder .button:focus {
+  outline: none;
+}
+#slajder .button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 1.3s;
+  transition: 1.3s;
 }
 #slajder .slajder_wrapper {
   margin: 0 auto;
@@ -992,6 +1019,12 @@ h2 {
   border: 1px solid #331703;
   font-family: RobotoBold, sans-serif;
 }
+#slajder .slick-prev:before {
+  content: url("../../images/prev.png");
+}
+#slajder .slick-next:before {
+  content: url("../../images/next.png");
+}
 
 .products .product {
   display: -webkit-box;
@@ -1003,34 +1036,76 @@ h2 {
   border-radius: 1vw;
   height: 60vh;
   margin-top: 3vh;
+  background-color: lightgrey;
 }
 
-.product1 {
+#polska-container .product1 {
   background: url(../../images/polska/Morskie_oko.jpg);
   background-position: center;
   background-size: cover;
-  background-color: lightgrey;
 }
-
-.product2 {
-  background: url(../../images/polska/Krakow.jpg);
-  background-position: center;
-  background-size: cover;
-  background-color: lightgrey;
-}
-
-.product3 {
+#polska-container .product2 {
   background: url(../../images/polska/gdansk.jpg);
   background-position: center;
   background-size: cover;
-  background-color: lightgrey;
 }
-
-.product4 {
+#polska-container .product3 {
+  background: url(../../images/polska/Krakow.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#polska-container .product4 {
   background: url(../../images/polska/bieszczady.jpg);
   background-position: center;
   background-size: cover;
-  background-color: lightgrey;
+}
+
+#niemcy-container .product1 {
+  background: url(../../images/niemcy/dresden.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#niemcy-container .product2 {
+  background: url(../../images/niemcy/berlin-wall.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#niemcy-container .product3 {
+  background: url(../../images/niemcy/gorlitz.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#czechy-container .product1 {
+  background: url(../../images/czechy/prague.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#czechy-container .product2 {
+  background: url(../../images/czechy/brno.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#czechy-container .product3 {
+  background: url(../../images/czechy/adrshpach.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#wlochy-container .product1 {
+  background: url(../../images/wlochy/rome.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#wlochy-container .product2 {
+  background: url(../../images/wlochy/milan.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#wlochy-container .product3 {
+  background: url(../../images/wlochy/venice.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .product-content {
@@ -1084,48 +1159,6 @@ h2 {
   display: block;
   color: #13BA6C;
   margin-bottom: 1vh;
-}
-
-.products-nav .product-nav {
-  margin: 2vh auto;
-  height: 75px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  opacity: 0.3;
-}
-.products-nav .product-nav img {
-  width: 90%;
-  height: 100%;
-  margin: 0 auto;
-  border-radius: 8px;
-}
-
-.products-nav .product-nav.slick-current {
-  opacity: 1;
-}
-
-.products-nav .product-nav:hover {
-  cursor: pointer;
-  opacity: 1;
-}
-
-.products-nav .product-nav:focus {
-  outline: 0;
-}
-
-#slajder .slick-prev:before {
-  content: url("../../images/prev.png");
-}
-
-#slajder .slick-next:before {
-  content: url("../../images/next.png");
 }
 
 #wlochy-container, #niemcy-container, #czechy-container {

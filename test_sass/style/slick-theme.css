@@ -2,7 +2,7 @@
 /* Slider */
 .slick-loading .slick-list
 {
-    background: #fff url('ajax-loader.html') center center no-repeat;
+    background: #fff url('./ajax-loader.gif') center center no-repeat;
 }
 
 /* Icons */
@@ -12,8 +12,8 @@
     font-weight: normal;
     font-style: normal;
 
-    src: url('fonts/slick.eot');
-    src: url('fonts/slickd41d.eot?#iefix') format('embedded-opentype'), url('fonts/slick.woff') format('woff'), url('fonts/slick.ttf') format('truetype'), url('fonts/slick.svg#slick') format('svg');
+    src: url('./fonts/slick.eot');
+    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
 }
 /* Arrows */
 .slick-prev,
@@ -79,7 +79,7 @@
 
 .slick-prev
 {
-    left: -125px;
+    left: -5vw;
 }
 [dir='rtl'] .slick-prev
 {
@@ -97,7 +97,7 @@
 
 .slick-next
 {
-    right: -125px;
+    right: -5vw;
 }
 [dir='rtl'] .slick-next
 {
@@ -188,7 +188,7 @@
     width: 20px;
     height: 20px;
 
-    content: '•';
+    content: url(../images/dot-circle-regular.svg);
     text-align: center;
 
     opacity: .25;

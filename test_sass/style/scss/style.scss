@@ -516,8 +516,9 @@ $main_color: #13BA6C;
 
 #slajder {
     .button{
+        @include button;
         background-color: $main_color;
-        margin: 0 auto 2vh auto;
+        margin: 2vh auto;
     }
     .slajder_wrapper{
         margin: 0 auto;
@@ -543,34 +544,84 @@ $main_color: #13BA6C;
         border: 1px solid rgb(51, 23, 3);
         font-family: RobotoBold, sans-serif;
     }
+
+    .slick-prev:before {
+        content: url("../../images/prev.png");
+    }
+
+    .slick-next:before {
+        content: url("../../images/next.png");
+    }
 }
 
-.products .product {
-    display: flex;
-    justify-content: flex-end;
-    border-radius: 1vw;
-    height: 60vh;
-    margin-top: 3vh;
-}
-.product1{
-    @include bg_slajder(url(../../images/polska/Morskie_oko.jpg));
-    background-color: lightgrey;
+    .products .product {
+        display: flex;
+        justify-content: flex-end;
+        border-radius: 1vw;
+        height: 60vh;
+        margin-top: 3vh;
+        background-color: lightgrey;
+    }
+#polska-container{
+    .product1{
+        @include bg_slajder(url(../../images/polska/Morskie_oko.jpg));
+    }
+
+    .product2{
+        @include bg_slajder(url(../../images/polska/gdansk.jpg));
+    }
+
+    .product3{
+        @include bg_slajder(url(../../images/polska/Krakow.jpg));
+    }
+
+    .product4{
+        @include bg_slajder(url(../../images/polska/bieszczady.jpg));
+    }
 }
 
-.product2{
-    @include bg_slajder(url(../../images/polska/Krakow.jpg));
-    background-color: lightgrey;
+#niemcy-container{
+    .product1{
+        @include bg_slajder(url(../../images/niemcy/dresden.jpg));
+    }
+
+    .product2{
+        @include bg_slajder(url(../../images/niemcy/berlin-wall.jpg));
+    }
+
+    .product3{
+        @include bg_slajder(url(../../images/niemcy/gorlitz.jpg));
+    }
 }
 
-.product3{
-    @include bg_slajder(url(../../images/polska/gdansk.jpg));
-    background-color: lightgrey;
+#czechy-container{
+    .product1{
+        @include bg_slajder(url(../../images/czechy/prague.jpg));
+    }
+
+    .product2{
+        @include bg_slajder(url(../../images/czechy/brno.jpg));
+    }
+
+    .product3{
+        @include bg_slajder(url(../../images/czechy/adrshpach.jpg));
+    }
 }
 
-.product4{
-    @include bg_slajder(url(../../images/polska/bieszczady.jpg));
-    background-color: lightgrey;
+#wlochy-container{
+    .product1{
+        @include bg_slajder(url(../../images/wlochy/rome.jpg));
+    }
+
+    .product2{
+        @include bg_slajder(url(../../images/wlochy/milan.jpg));
+    }
+
+    .product3{
+        @include bg_slajder(url(../../images/wlochy/venice.jpg));
+    }
 }
+
 
 
 .product-content {
@@ -618,44 +669,6 @@ $main_color: #13BA6C;
     }
 }
 
-.products-nav{
-    .product-nav {
-        margin: 2vh auto;
-        height: 75px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        opacity: 0.3;
-        img{
-            width: 90%;
-            height: 100%;
-            margin: 0 auto;
-            border-radius: 8px;
-        }
-    }
-}
-
-
-.products-nav .product-nav.slick-current {
-    opacity: 1;
-}
-
-.products-nav .product-nav:hover {
-    cursor: pointer;
-    opacity: 1;
-}
-
-.products-nav .product-nav:focus {
-    outline: 0;
-}
-
-#slajder .slick-prev:before {
-    content: url("../../images/prev.png");
-}
-
-#slajder .slick-next:before {
-    content: url("../../images/next.png");
-}
 
 #wlochy-container, #niemcy-container, #czechy-container {
     display: none;

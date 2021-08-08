@@ -25,12 +25,46 @@ $(document).ready(() => {
 
 
 //kierunki
+    $('.kieruken_item1').click(() => {
+        $('.category').removeClass('active');
+        $('.category1').addClass('active');
+        $('.products-container').hide();
+        $('#polska-container').show();
+        $('#polska-container' + ' .products').slick('refresh');
+
+    });
+
+    $('.kieruken_item2').click(() => {
+        $('.category').removeClass('active');
+        $('.category2').addClass('active');
+        $('.products-container').hide();
+        $('#niemcy-container').show();
+        $('#niemcy-container' + ' .products').slick('refresh');
+
+    });
+
+    $('.kieruken_item3').click(() => {
+        $('.category').removeClass('active');
+        $('.category3').addClass('active');
+        $('.products-container').hide();
+        $('#czechy-container').show();
+        $('#czechy-container' + ' .products').slick('refresh');
+    });
+
+    $('.kieruken_item4').click(() => {
+        $('.category').removeClass('active');
+        $('.category4').addClass('active');
+        $('.products-container').hide();
+        $('#wlochy-container').show();
+        $('#wlochy-container' + ' .products').slick('refresh');
+    });
 
 // slajder
 
 $('.category').click((e) => {
     let currentElement = $(e.target);
     $('.products-container').hide();
+
     let id = currentElement.data('id');
     $('#' + id).show();
 
@@ -38,7 +72,6 @@ $('.category').click((e) => {
     currentElement.addClass('active');
 
     $('#' + id + ' .products').slick('refresh');
-    $('#' + id + ' .products-nav').slick('refresh');
 });
 
     $('#polska-container .products').slick({
@@ -46,17 +79,15 @@ $('.category').click((e) => {
         slidesToScroll: 1,
         arrows: true,
         fade: true,
-        asNavFor: '#polska-container .products-nav'
-    });
-
-    $('#polska-container .products-nav').slick({
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        asNavFor: '#polska-container .products',
-        infinite: false,
-        dots: false,
-        centerMode: false,
-        focusOnSelect: true
+        dots: true,
+        responsive: [
+                    {
+                      breakpoint: 767,
+                      settings: {
+                        arrows: false,
+                      }
+                    }
+                  ]
     });
 
     $('#niemcy-container .products').slick({
@@ -64,17 +95,15 @@ $('.category').click((e) => {
         slidesToScroll: 1,
         arrows: true,
         fade: true,
-        asNavFor: '#niemcy-container .products-nav'
-    });
-
-    $('#niemcy-container .products-nav').slick({
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        asNavFor: '#niemcy-container .products',
-        infinite: false,
-        dots: false,
-        centerMode: false,
-        focusOnSelect: true
+        dots: true,
+        responsive: [
+                    {
+                      breakpoint: 767,
+                      settings: {
+                        arrows: false,
+                      }
+                    }
+                  ]
     });
 
     $('#czechy-container .products').slick({
@@ -82,17 +111,15 @@ $('.category').click((e) => {
         slidesToScroll: 1,
         arrows: true,
         fade: true,
-        asNavFor: '#czechy-container .products-nav'
-    });
-
-    $('#czechy-container .products-nav').slick({
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        asNavFor: '#czechy-container .products',
-        infinite: false,
-        dots: false,
-        centerMode: false,
-        focusOnSelect: true
+        dots: true,
+        responsive: [
+                    {
+                      breakpoint: 767,
+                      settings: {
+                        arrows: false,
+                      }
+                    }
+                  ]
     });
 
     $('#wlochy-container .products').slick({
@@ -100,18 +127,17 @@ $('.category').click((e) => {
         slidesToScroll: 1,
         arrows: true,
         fade: true,
-        asNavFor: '#wlochy-container .products-nav'
+        dots: true,
+        responsive: [
+                    {
+                      breakpoint: 767,
+                      settings: {
+                        arrows: false,
+                      }
+                    }
+                  ]
     });
 
-    $('#wlochy-container .products-nav').slick({
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        asNavFor: '#wlochy-container .products',
-        infinite: false,
-        dots: false,
-        centerMode: false,
-        focusOnSelect: true
-    });
 
 // opinie
 
