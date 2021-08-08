@@ -3,6 +3,13 @@
     transform: scale(1);
     transition: 0s;
 }
+@mixin bg_slajder($background,){
+    background: $background;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 55vh;
+}
 
 @media screen and(max-width: 767px){
     .navbar .navbar_logo {
@@ -140,8 +147,10 @@
         background-color: rgba(255,255,255,0.8);
         width: 100%;
         height: 45%;
+        padding: 0;
         display: flex;
         flex-direction: column;
+        justify-content: flex-end;
         .naglowek{
             .product-content-title {
                 font-size: 2vh;
@@ -161,15 +170,17 @@
         }
         .daty{
             font-weight: 600;
-            font-size: 1.5vh
+            font-size: 2vh
         }
         .dates_value{
+            margin-top: 1vh;
             font-weight: 600;
-            font-size: 1.5vh;
+            font-size: 2vh;
         }
     }
 
     .product-content-properties {
+        margin-top: 2vh;
         i{
             font-size: 5vh;
             margin-bottom: 1vh;
@@ -177,6 +188,104 @@
         font-size: 2vh;
     }
 
+}
+#polska-container{
+    .product1{
+        background: none;
+        .product-img{
+        @include bg_slajder(url(../../images/polska/Morskie_oko.jpg));
+    }
+}
+
+    .product2{
+        background: none;
+        .product-img{
+        @include bg_slajder(url(../../images/polska/gdansk.jpg));
+    }
+}
+
+    .product3{
+        background: none;
+        .product-img{
+            @include bg_slajder(url(../../images/polska/Krakow.jpg));
+    }
+}
+
+    .product4{
+        background: none;
+        .product-img{
+        @include bg_slajder(url(../../images/polska/bieszczady.jpg));
+    }
+}
+}
+
+#niemcy-container{
+    .product1{
+        background: none;
+        .product-img{
+        @include bg_slajder(url(../../images/niemcy/dresden.jpg));
+    }
+}
+
+    .product2{
+        background: none;
+        .product-img{
+        @include bg_slajder(url(../../images/niemcy/berlin-wall.jpg));
+    }
+}
+
+    .product3{
+        background: none;
+        .product-img{
+        @include bg_slajder(url(../../images/niemcy/gorlitz.jpg));
+    }
+}
+}
+
+#czechy-container{
+    .product1{
+        background: none;
+        .product-img{
+        @include bg_slajder(url(../../images/czechy/prague.jpg));
+    }
+}
+
+    .product2{
+        background: none;
+        .product-img{
+        @include bg_slajder(url(../../images/czechy/brno.jpg));
+    }
+}
+
+    .product3{
+        background: none;
+        .product-img{
+        @include bg_slajder(url(../../images/czechy/adrshpach.jpg));
+    }
+}
+}
+
+#wlochy-container{
+    .product1{
+        background: none;
+        .product-img{
+        @include bg_slajder(url(../../images/wlochy/rome.jpg));
+    }
+}
+
+    .product2{
+        background: none;
+        .product-img{
+        @include bg_slajder(url(../../images/wlochy/milan.jpg));
+    }
+}
+
+    .product3{
+        background: none;
+        .product-img{
+        @include bg_slajder(url(../../images/wlochy/venice.jpg));
+    }
+}
 }
 
     #kontakt{

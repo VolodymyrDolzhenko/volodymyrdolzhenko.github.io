@@ -194,6 +194,7 @@
     background-color: rgba(255, 255, 255, 0.8);
     width: 100%;
     height: 45%;
+    padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -201,6 +202,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   #slajder .product-content .naglowek .product-content-title {
     font-size: 2vh;
@@ -220,18 +224,154 @@
   }
   #slajder .product-content-description .daty {
     font-weight: 600;
-    font-size: 1.5vh;
+    font-size: 2vh;
   }
   #slajder .product-content-description .dates_value {
+    margin-top: 1vh;
     font-weight: 600;
-    font-size: 1.5vh;
+    font-size: 2vh;
   }
   #slajder .product-content-properties {
+    margin-top: 2vh;
     font-size: 2vh;
   }
   #slajder .product-content-properties i {
     font-size: 5vh;
     margin-bottom: 1vh;
+  }
+
+  #polska-container .product1 {
+    background: none;
+  }
+  #polska-container .product1 .product-img {
+    background: url(../../images/polska/Morskie_oko.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 55vh;
+  }
+  #polska-container .product2 {
+    background: none;
+  }
+  #polska-container .product2 .product-img {
+    background: url(../../images/polska/gdansk.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 55vh;
+  }
+  #polska-container .product3 {
+    background: none;
+  }
+  #polska-container .product3 .product-img {
+    background: url(../../images/polska/Krakow.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 55vh;
+  }
+  #polska-container .product4 {
+    background: none;
+  }
+  #polska-container .product4 .product-img {
+    background: url(../../images/polska/bieszczady.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 55vh;
+  }
+
+  #niemcy-container .product1 {
+    background: none;
+  }
+  #niemcy-container .product1 .product-img {
+    background: url(../../images/niemcy/dresden.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 55vh;
+  }
+  #niemcy-container .product2 {
+    background: none;
+  }
+  #niemcy-container .product2 .product-img {
+    background: url(../../images/niemcy/berlin-wall.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 55vh;
+  }
+  #niemcy-container .product3 {
+    background: none;
+  }
+  #niemcy-container .product3 .product-img {
+    background: url(../../images/niemcy/gorlitz.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 55vh;
+  }
+
+  #czechy-container .product1 {
+    background: none;
+  }
+  #czechy-container .product1 .product-img {
+    background: url(../../images/czechy/prague.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 55vh;
+  }
+  #czechy-container .product2 {
+    background: none;
+  }
+  #czechy-container .product2 .product-img {
+    background: url(../../images/czechy/brno.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 55vh;
+  }
+  #czechy-container .product3 {
+    background: none;
+  }
+  #czechy-container .product3 .product-img {
+    background: url(../../images/czechy/adrshpach.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 55vh;
+  }
+
+  #wlochy-container .product1 {
+    background: none;
+  }
+  #wlochy-container .product1 .product-img {
+    background: url(../../images/wlochy/rome.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 55vh;
+  }
+  #wlochy-container .product2 {
+    background: none;
+  }
+  #wlochy-container .product2 .product-img {
+    background: url(../../images/wlochy/milan.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 55vh;
+  }
+  #wlochy-container .product3 {
+    background: none;
+  }
+  #wlochy-container .product3 .product-img {
+    background: url(../../images/wlochy/venice.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 55vh;
   }
 
   #kontakt {
