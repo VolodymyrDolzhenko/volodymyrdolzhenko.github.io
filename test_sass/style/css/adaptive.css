@@ -184,6 +184,47 @@
     -ms-grid-row: 2;
         grid-row-start: 2;
   }
+  #slajder .products .product {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #slajder .product-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    height: 45%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #slajder .product-content .naglowek .product-content-title {
+    font-size: 2vh;
+  }
+  #slajder .product-content .naglowek .slogan {
+    font-size: 1.5vh;
+  }
+  #slajder .product-content-description {
+    font-size: 1vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 70% 15% 15%;
+    grid-template-rows: 70% 15% 15%;
+  }
+  #slajder .product-content-description .daty {
+    font-size: 1.5vh;
+  }
+  #slajder .product-content-description .dates_value {
+    font-size: 1.5vh;
+  }
+  #slajder .product-content-properties i {
+    font-size: 5vh;
+    margin-bottom: 1vh;
+  }
 
   #kontakt {
     height: 100%;
