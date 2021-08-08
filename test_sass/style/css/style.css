@@ -1003,7 +1003,7 @@ h2 {
       -ms-flex-pack: center;
           justify-content: center;
 }
-#slajder .category {
+#slajder .category-container .category {
   font-size: 1.2vw;
   text-align: center;
   border: 1px solid transparent;
@@ -1011,11 +1011,11 @@ h2 {
   padding: 10px 15px;
   border-radius: 10px;
 }
-#slajder .category:hover {
+#slajder .category-container .category:hover {
   cursor: pointer;
   border: 1px solid #331703;
 }
-#slajder .category.active {
+#slajder .category-container .category.active {
   border: 1px solid #331703;
   font-family: RobotoBold, sans-serif;
 }

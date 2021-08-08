@@ -99,37 +99,6 @@
     font-size: 4vh;
   }
 
-  #kontakt {
-    height: 100%;
-  }
-  #kontakt .mapa_google {
-    width: 80vw;
-    height: 20vh;
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    -ms-grid-column-span: 4;
-    grid-column-end: 5;
-    -ms-grid-row: 4;
-        grid-row-start: 4;
-  }
-  #kontakt .dane_kontaktowe {
-    width: 80vw;
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    -ms-grid-column-span: 4;
-    grid-column-end: 5;
-    -ms-grid-row: 5;
-        grid-row-start: 5;
-    margin-top: 3vh;
-    margin-bottom: 3vh;
-  }
-  #kontakt .button:hover {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-transition: 0s;
-    transition: 0s;
-  }
-
   #kierunki .kierunki_items {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -163,7 +132,60 @@
     width: 70vw;
   }
 
+  #slajder .slajder_wrapper {
+    width: 90vw;
+  }
+  #slajder .button {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: 0s;
+    transition: 0s;
+    width: 80vw;
+    margin: 2vh auto;
+  }
+  #slajder .category-container {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 2;
+    grid-template-rows: 2;
+    -ms-grid-columns: 2;
+    grid-template-columns: 2;
+  }
+  #slajder .category-container > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  #slajder .category-container .category {
+    font-size: 1.2vh;
+  }
+  #slajder .category-container .category1 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+  }
+  #slajder .category-container .category2 {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+  }
+  #slajder .category-container .category3 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+  }
+  #slajder .category-container .category4 {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+  }
+
   #kontakt {
+    height: 100%;
     -ms-grid-columns: (1fr)[3];
     grid-template-columns: repeat(3, 1fr);
   }
@@ -190,6 +212,33 @@
   }
   #kontakt i {
     font-size: 4vh;
+  }
+  #kontakt .mapa_google {
+    width: 80vw;
+    height: 20vh;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-column-span: 4;
+    grid-column-end: 5;
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+  }
+  #kontakt .dane_kontaktowe {
+    width: 80vw;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-column-span: 4;
+    grid-column-end: 5;
+    -ms-grid-row: 5;
+        grid-row-start: 5;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+  }
+  #kontakt .button:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: 0s;
+    transition: 0s;
   }
 
   .gallery_wrapper {

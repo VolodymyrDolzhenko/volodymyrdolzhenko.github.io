@@ -76,8 +76,83 @@
     }
 }
 
+#kierunki{
+.kierunki_items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    a{
+        align-self: flex-start;
+        margin-left: 25%;
+        i{
+            font-size: 4vh;
+        }
+    &:hover{
+        @include no-hover;
+    }}
+}
+.button{
+    width: 70vw;
+}
+}
+
+#slajder{
+    .slajder_wrapper{
+        width: 90vw;
+    }
+    .button{
+        @include no-hover;
+        width: 80vw;
+        margin: 2vh auto;
+    }
+    .category-container{
+        width: 100%;
+        display: grid;
+        grid-template-rows: 2;
+        grid-template-columns: 2;
+        .category{
+            font-size: 1.2vh;
+        }
+        .category1{
+            grid-column-start: 1;
+            grid-row-start: 1;
+        }
+        .category2{
+            grid-column-start: 2;
+            grid-row-start: 1;
+        }
+        .category3{
+            grid-column-start: 1;
+            grid-row-start: 2;
+        }
+        .category4{
+            grid-column-start: 2;
+            grid-row-start: 2;
+        }
+    }
+}
+
     #kontakt{
         height: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        h2{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .section_header_p{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .button {
+            width: 70vw;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 3;
+        }
+        i{
+            font-size: 4vh
+        }
         .mapa_google{
             width: 80vw;
             height: 20vh;
@@ -100,48 +175,6 @@
         }
     }
 
-    #kierunki{
-    .kierunki_items{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        a{
-            align-self: flex-start;
-            margin-left: 25%;
-            i{
-                font-size: 4vh;
-            }
-        &:hover{
-            @include no-hover;
-        }}
-    }
-    .button{
-        width: 70vw;
-    }
-}
-
-
-    #kontakt{
-        grid-template-columns: repeat(3, 1fr);
-        h2{
-            grid-column-start: 1;
-            grid-column-end: 4;
-        }
-        .section_header_p{
-            grid-column-start: 1;
-            grid-column-end: 4;
-        }
-        .button {
-            width: 70vw;
-            grid-column-start: 1;
-            grid-column-end: 4;
-            grid-row-start: 3;
-        }
-        i{
-            font-size: 4vh
-        }
-    }
 
     .gallery_wrapper{
         display: flex;
@@ -182,4 +215,6 @@
         }
         font-size: 3vw;
     }
+
+
 }

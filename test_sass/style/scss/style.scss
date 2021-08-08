@@ -527,22 +527,22 @@ $main_color: #13BA6C;
     .category-container {
         display: flex;
         justify-content: center;
-    }
-    .category {
-        font-size: 1.2vw;
-        text-align: center;
-        border: 1px solid transparent;
-        margin: 0 2vh;
-        padding: 10px 15px;
-        border-radius: 10px;
-        &:hover{
-            cursor: pointer;
-            border: 1px solid rgb(51, 23, 3);
+        .category {
+            font-size: 1.2vw;
+            text-align: center;
+            border: 1px solid transparent;
+            margin: 0 2vh;
+            padding: 10px 15px;
+            border-radius: 10px;
+            &:hover{
+                cursor: pointer;
+                border: 1px solid rgb(51, 23, 3);
+            }
         }
-    }
-    .category.active {
-        border: 1px solid rgb(51, 23, 3);
-        font-family: RobotoBold, sans-serif;
+        .category.active {
+            border: 1px solid rgb(51, 23, 3);
+            font-family: RobotoBold, sans-serif;
+        }
     }
 
     .slick-prev:before {
