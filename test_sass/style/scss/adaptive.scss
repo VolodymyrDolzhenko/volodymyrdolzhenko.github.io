@@ -107,12 +107,13 @@
         margin: 2vh auto;
     }
     .category-container{
-        width: 100%;
         display: grid;
         grid-template-rows: 2;
         grid-template-columns: 2;
+        width: 90vw;
         .category{
-            font-size: 1.2vh;
+            width: 40vw;
+            font-size: 1.5vh;
         }
         .category1{
             grid-column-start: 1;
@@ -131,6 +132,9 @@
             grid-row-start: 2;
         }
     }
+
+
+
 }
 
     #kontakt{

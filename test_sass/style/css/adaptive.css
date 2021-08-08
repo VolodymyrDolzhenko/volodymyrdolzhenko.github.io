@@ -144,20 +144,21 @@
     margin: 2vh auto;
   }
   #slajder .category-container {
-    width: 100%;
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 2;
     grid-template-rows: 2;
     -ms-grid-columns: 2;
     grid-template-columns: 2;
+    width: 90vw;
   }
   #slajder .category-container > *:nth-child(1) {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
   #slajder .category-container .category {
-    font-size: 1.2vh;
+    width: 40vw;
+    font-size: 1.5vh;
   }
   #slajder .category-container .category1 {
     -ms-grid-column: 1;
