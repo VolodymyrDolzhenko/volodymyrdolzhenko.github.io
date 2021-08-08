@@ -426,6 +426,7 @@
 
   #reservation {
     width: 90vw;
+    min-height: 90vh;
   }
   #reservation #reserve-button button {
     width: 90%;
