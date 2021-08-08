@@ -214,30 +214,21 @@
   }
   #slajder .product-content-description {
     font-size: 1.5vh;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 70% 15% 15%;
-    grid-template-rows: 70% 15% 15%;
   }
   #slajder .product-content-description .standartowe_zdanie {
     display: none;
   }
   #slajder .product-content-description .daty {
-    font-weight: 600;
     font-size: 2vh;
   }
   #slajder .product-content-description .dates_value {
-    margin-top: 1vh;
-    font-weight: 600;
     font-size: 2vh;
   }
   #slajder .product-content-properties {
-    margin-top: 2vh;
     font-size: 2vh;
   }
   #slajder .product-content-properties i {
-    font-size: 5vh;
-    margin-bottom: 1vh;
+    font-size: 4vh;
   }
 
   #polska-container .product1 {

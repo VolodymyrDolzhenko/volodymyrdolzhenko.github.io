@@ -163,29 +163,22 @@
     }
     .product-content-description{
         font-size: 1.5vh;
-        display: grid;
-        grid-template-rows: 70% 15% 15%;
         .standartowe_zdanie{
             display: none;
         }
         .daty{
-            font-weight: 600;
             font-size: 2vh
         }
         .dates_value{
-            margin-top: 1vh;
-            font-weight: 600;
             font-size: 2vh;
         }
     }
 
     .product-content-properties {
-        margin-top: 2vh;
-        i{
-            font-size: 5vh;
-            margin-bottom: 1vh;
-        }
         font-size: 2vh;
+        i{
+            font-size: 4vh;
+        }
     }
 
 }
@@ -197,11 +190,11 @@
     }
 }
 
-    .product2{
-        background: none;
-        .product-img{
-        @include bg_slajder(url(../../images/polska/gdansk.jpg));
-    }
+.product2{
+    background: none;
+    .product-img{
+    @include bg_slajder(url(../../images/polska/gdansk.jpg));
+}
 }
 
     .product3{
