@@ -494,4 +494,8 @@
   footer .nav_menu {
     display: none;
   }
+
+  #opinie {
+    min-height: 96vh;
+  }
 }

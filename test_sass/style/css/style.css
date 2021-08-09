@@ -1228,17 +1228,47 @@ h2 {
 }
 
 #opinie {
-  margin: 0 auto;
-  min-height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f2f2), to(#8bb8ca));
-  background-image: linear-gradient(180deg, #f9f2f2 0%, #8bb8ca 100%);
-  background-position: top center;
-  padding: 1px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f9f2f2), to(#8bb8ca));
+  background: linear-gradient(180deg, #f9f2f2 0%, #8bb8ca 100%);
+  background-size: cover;
+  height: 96vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 96vh;
 }
-
-#opinie .block-title {
-  text-transform: uppercase;
-  margin: 130px 0 60px 0;
+#opinie .button {
+  background-color: #13BA6C;
+  margin-bottom: 8vh;
+  margin-top: 4vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40vw;
+}
+#opinie .button .main_button {
+  background-color: #13BA6C;
+}
+#opinie .button .main_button:hover {
+  -webkit-box-shadow: 0 0 1.6vw #00FF33;
+          box-shadow: 0 0 1.6vw #00FF33;
+}
+#opinie .button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 1.3s;
+  transition: 1.3s;
+  -webkit-box-shadow: 0 0 1.6vw #00FF33;
+          box-shadow: 0 0 1.6vw #00FF33;
 }
 
 #reviews {
@@ -1247,7 +1277,7 @@ h2 {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 60%;
+  width: 80vw;
   margin: 0 auto;
 }
 
@@ -1255,56 +1285,43 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  width: 470px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  outline: 0;
-  margin: 0 50px;
+  margin-bottom: 5vh;
+  margin-right: 2vh;
 }
 
 #reviews .review .review-image {
-  border-radius: 50%;
-  width: 112px;
-  height: 112px;
-  overflow: hidden;
-  background-size: cover;
+  background: url("../../images/review1.jpg");
   background-position: center;
-}
-
-#reviews .review .review-text {
-  width: 325px;
+  background-size: cover;
+  width: 100%;
+  height: 30vh;
+  border-radius: 2vw;
 }
 
 #reviews .review .review-text .review-text-title {
-  font-size: 20px;
-  font-family: "RobotoBold", sans-serif;
-  color: black;
+  font-size: 1.5vw;
   text-transform: uppercase;
-  margin-bottom: 35px;
+  text-align: center;
 }
 
 #reviews .review .review-text .review-text-description {
-  font-size: 16px;
-  font-family: "Roboto Light", sans-serif;
-  color: black;
-  line-height: 1.563;
+  font-size: 1vw;
 }
 
 #reviews .slick-prev:before {
-  content: url("../images/prev.png");
+  content: url("../../images/prev.png");
 }
 
 #reviews .slick-next:before {
-  content: url("../images/next.png");
-}
-
-.button_opinie {
-  width: 30%;
-  margin: 5% auto;
+  content: url("../../images/next.png");
 }
 
 footer {
@@ -1419,9 +1436,36 @@ footer .nav_menu li {
 }
 
 #reserve-button button {
+  border: none;
+  height: 9vh;
+  width: 25vw;
+  font-size: 3vh;
+  border-radius: 10vw;
+  color: #fff;
+  letter-spacing: 0.125vw;
+  font-weight: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
   margin: 0 auto;
   background-color: #13BA6C;
   width: 30vw;
+}
+#reserve-button button:active, #reserve-button button:focus {
+  outline: none;
+}
+#reserve-button button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 1.3s;
+  transition: 1.3s;
 }
 #reserve-button button:hover {
   -webkit-transform: scale(1.1);
