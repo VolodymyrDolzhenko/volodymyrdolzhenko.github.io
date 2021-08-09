@@ -193,11 +193,10 @@
   #slajder .product-content {
     background-color: rgba(255, 255, 255, 0.8);
     width: 100%;
-    height: 45%;
+    height: 55%;
     padding: 0;
-    -ms-grid-rows: 10% 2vh 30% 2vh 10%;
-    grid-template-rows: 10% 30% 10%;
-    grid-row-gap: 2vh;
+    -ms-grid-rows: 20% 50% 30%;
+    grid-template-rows: 20% 50% 30%;
   }
   #slajder .product-content .naglowek .product-content-title {
     font-size: 2vh;
@@ -214,6 +213,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   #slajder .product-content-description .standartowe_zdanie {
     display: none;
@@ -234,6 +236,7 @@
     font-size: 2vh;
   }
   #slajder .product-content-properties {
+    margin-top: 4vh;
     font-size: 2vh;
   }
   #slajder .product-content-properties i {
@@ -261,7 +264,7 @@
     background: url(../../images/polska/Morskie_oko.jpg);
     background-position: center;
     background-size: cover;
-    height: 55vh;
+    height: 40vh;
     border-radius: 1vw;
   }
   #polska-container .product2 {
@@ -271,7 +274,7 @@
     background: url(../../images/polska/gdansk.jpg);
     background-position: center;
     background-size: cover;
-    height: 55vh;
+    height: 40vh;
     border-radius: 1vw;
   }
   #polska-container .product3 {
@@ -281,7 +284,7 @@
     background: url(../../images/polska/Krakow.jpg);
     background-position: center;
     background-size: cover;
-    height: 55vh;
+    height: 40vh;
     border-radius: 1vw;
   }
   #polska-container .product4 {
@@ -291,7 +294,7 @@
     background: url(../../images/polska/bieszczady.jpg);
     background-position: center;
     background-size: cover;
-    height: 55vh;
+    height: 40vh;
     border-radius: 1vw;
   }
 
@@ -302,7 +305,7 @@
     background: url(../../images/niemcy/dresden.jpg);
     background-position: center;
     background-size: cover;
-    height: 55vh;
+    height: 40vh;
     border-radius: 1vw;
   }
   #niemcy-container .product2 {
@@ -312,7 +315,7 @@
     background: url(../../images/niemcy/berlin-wall.jpg);
     background-position: center;
     background-size: cover;
-    height: 55vh;
+    height: 40vh;
     border-radius: 1vw;
   }
   #niemcy-container .product3 {
@@ -322,7 +325,7 @@
     background: url(../../images/niemcy/gorlitz.jpg);
     background-position: center;
     background-size: cover;
-    height: 55vh;
+    height: 40vh;
     border-radius: 1vw;
   }
 
@@ -333,7 +336,7 @@
     background: url(../../images/czechy/prague.jpg);
     background-position: center;
     background-size: cover;
-    height: 55vh;
+    height: 40vh;
     border-radius: 1vw;
   }
   #czechy-container .product2 {
@@ -343,7 +346,7 @@
     background: url(../../images/czechy/brno.jpg);
     background-position: center;
     background-size: cover;
-    height: 55vh;
+    height: 40vh;
     border-radius: 1vw;
   }
   #czechy-container .product3 {
@@ -353,7 +356,7 @@
     background: url(../../images/czechy/adrshpach.jpg);
     background-position: center;
     background-size: cover;
-    height: 55vh;
+    height: 40vh;
     border-radius: 1vw;
   }
 
@@ -364,7 +367,7 @@
     background: url(../../images/wlochy/rome.jpg);
     background-position: center;
     background-size: cover;
-    height: 55vh;
+    height: 40vh;
     border-radius: 1vw;
   }
   #wlochy-container .product2 {
@@ -374,7 +377,7 @@
     background: url(../../images/wlochy/milan.jpg);
     background-position: center;
     background-size: cover;
-    height: 55vh;
+    height: 40vh;
     border-radius: 1vw;
   }
   #wlochy-container .product3 {
@@ -384,7 +387,7 @@
     background: url(../../images/wlochy/venice.jpg);
     background-position: center;
     background-size: cover;
-    height: 55vh;
+    height: 40vh;
     border-radius: 1vw;
   }
 
