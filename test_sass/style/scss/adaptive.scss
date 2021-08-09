@@ -170,13 +170,9 @@
         .daty_container{
             display: flex;
             flex-direction: row;
-            .daty{
-                font-size: 2vh;
-            }
-            .dates_value{
-                font-size: 2vh;
-            }
-
+            justify-content: space-between;
+            font-size: 2vh;
+            font-weight: 600;
         }
     }
 

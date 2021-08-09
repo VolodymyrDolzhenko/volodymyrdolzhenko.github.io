@@ -228,12 +228,11 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-  }
-  #slajder .product-content-description .daty_container .daty {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     font-size: 2vh;
-  }
-  #slajder .product-content-description .daty_container .dates_value {
-    font-size: 2vh;
+    font-weight: 600;
   }
   #slajder .product-content-properties {
     margin-top: 4vh;
