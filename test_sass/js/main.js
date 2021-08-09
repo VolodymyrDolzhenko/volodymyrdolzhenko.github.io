@@ -23,6 +23,11 @@ $(document).ready(() => {
         $(".nav_menu_top").removeClass('active');
     });
 
+    $('.wybrac_wycieczke_button').click(() => {
+        $('html, body').animate({
+        scrollTop: $("#slajder").offset().top
+    }, 1500);
+    });
 
 //kierunki
     $('.kieruken_item1').click(() => {
