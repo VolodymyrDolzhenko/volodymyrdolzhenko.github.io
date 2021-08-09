@@ -167,12 +167,16 @@
         .standartowe_zdanie{
             display: none;
         }
-        .daty{
-            font-size: 2vh;
-        }
-        .dates_value{
-            display: inline-block;
-            font-size: 2vh;
+        .daty_container{
+            display: flex;
+            flex-direction: row;
+            .daty{
+                font-size: 2vh;
+            }
+            .dates_value{
+                font-size: 2vh;
+            }
+
         }
     }
 
@@ -180,6 +184,13 @@
         font-size: 2vh;
         i{
             font-size: 4vh;
+            margin-bottom: 0;
+            margin-right: 1vw;
+        }
+        .product-content-property{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
         }
     }
 

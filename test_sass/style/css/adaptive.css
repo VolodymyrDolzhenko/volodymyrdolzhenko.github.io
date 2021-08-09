@@ -218,11 +218,19 @@
   #slajder .product-content-description .standartowe_zdanie {
     display: none;
   }
-  #slajder .product-content-description .daty {
+  #slajder .product-content-description .daty_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #slajder .product-content-description .daty_container .daty {
     font-size: 2vh;
   }
-  #slajder .product-content-description .dates_value {
-    display: inline-block;
+  #slajder .product-content-description .daty_container .dates_value {
     font-size: 2vh;
   }
   #slajder .product-content-properties {
@@ -230,6 +238,20 @@
   }
   #slajder .product-content-properties i {
     font-size: 4vh;
+    margin-bottom: 0;
+    margin-right: 1vw;
+  }
+  #slajder .product-content-properties .product-content-property {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   #polska-container .product1 {
