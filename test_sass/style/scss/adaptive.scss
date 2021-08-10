@@ -338,11 +338,15 @@
     }
 
 
-    .gallery_wrapper{
+    #gallery_wrapper{
         display: flex;
         flex-direction: column;
-        img{
-            height: 70vh;
+        .gallery_wrapper_grid{
+            display: block;
+            img{
+                height: 70vh;
+                width: 100%;
+            }
         }
     }
 

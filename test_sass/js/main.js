@@ -142,7 +142,14 @@ $('.category').click((e) => {
                     }
                   ]
     });
-
+    if( $(document).width() < 768 ) {
+        $('#gallery_wrapper').slick({
+                arrows: false,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 2800,
+            });
+    };
 
 // opinie
 
