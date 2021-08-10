@@ -696,7 +696,7 @@ $main_color: #13BA6C;
     .button{
         @include main_button;
         background-color: $main_color;
-        margin-bottom: 8vh;
+        margin-bottom: 4vh;
         margin-top: 4vh;
         margin-left: auto;
         margin-right: auto;
@@ -712,23 +712,37 @@ $main_color: #13BA6C;
     display: flex;
     justify-content: space-around;
     width: 80vw;
+    height: 70vh;
     margin: 0 auto;
+    .review {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 60vh;
+        margin-bottom: 2vh;
+        margin-right:5vh;
+        .review-image {
+            width: 100%;
+            height: 20vh;
+            border-radius: 2vw;
+        }
+    }
 }
 
-#reviews .review {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    justify-content: space-between;
-    margin-bottom: 5vh;
-    margin-right: 2vh;
+.review-text-title {
+    font-size: 1.5vw;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
 }
 
-#reviews .review .review-image {
-    width: 100%;
-    height: 30vh;
-    border-radius: 2vw;
+.review-text-description {
+    font-size: 1.2vw;
 }
+
+
 .rewiew1{
     .review-image{
     @include bg_slajder(url('../../images/opinie/review1.jpg'));
@@ -751,15 +765,7 @@ $main_color: #13BA6C;
 }
 
 
-#reviews .review .review-text .review-text-title {
-    font-size: 1.5vw;
-    text-transform: uppercase;
-    text-align: center;
-}
 
-#reviews .review .review-text .review-text-description {
-    font-size: 1vw;
-}
 
 #reviews .slick-prev:before {
     content: url("../../images/prev.png");

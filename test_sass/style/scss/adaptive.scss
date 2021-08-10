@@ -374,8 +374,29 @@
         font-size: 3vw;
     }
 
-#opinie{
-    min-height: 96vh;
-}
+    #opinie{
+        min-height: 96vh;
+        .button{
+            width: 80vw;
+        }
+    }
+
+    #reviews {
+        .review {
+            margin-right: 0;
+            .review-image {
+                height: 30vh;
+            }
+        }
+    }
+
+    .review-text-title {
+        font-size: 2vh;
+
+    }
+
+    .review-text-description {
+        font-size: 1.5vh;
+    }
 
 }

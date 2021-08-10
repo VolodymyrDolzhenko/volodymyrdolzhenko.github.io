@@ -498,4 +498,22 @@
   #opinie {
     min-height: 96vh;
   }
+  #opinie .button {
+    width: 80vw;
+  }
+
+  #reviews .review {
+    margin-right: 0;
+  }
+  #reviews .review .review-image {
+    height: 30vh;
+  }
+
+  .review-text-title {
+    font-size: 2vh;
+  }
+
+  .review-text-description {
+    font-size: 1.5vh;
+  }
 }
