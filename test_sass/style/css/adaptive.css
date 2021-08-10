@@ -512,7 +512,9 @@
   }
 
   #reviews .review {
-    margin-right: 0;
+    width: 100%;
+    margin-right: 1vw;
+    margin-left: 1vw;
   }
   #reviews .review .review-image {
     height: 30vh;

@@ -722,20 +722,20 @@ $main_color: #13BA6C;
     .review {
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 50vw;
         height: 60vh;
         margin-bottom: 2vh;
-        margin-right:5vh;
+        margin-right: 5vh;
         .review-image {
             width: 100%;
-            height: 20vh;
+            min-height: 20vh;
             border-radius: 2vw;
         }
     }
 }
 
 .review-text-title {
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     margin-bottom: 2vh;
     margin-top: 2vh;
     text-transform: uppercase;
@@ -744,7 +744,7 @@ $main_color: #13BA6C;
 }
 
 .review-text-description {
-    font-size: 1.2vw;
+    font-size: 1.1vw;
 }
 
 
@@ -770,8 +770,6 @@ $main_color: #13BA6C;
 }
 
 
-
-
 #reviews .slick-prev:before {
     content: url("../../images/prev.png");
 }
@@ -779,6 +777,8 @@ $main_color: #13BA6C;
 #reviews .slick-next:before {
     content: url("../../images/next.png");
 }
+
+
 
 // FOOTER
 footer{
