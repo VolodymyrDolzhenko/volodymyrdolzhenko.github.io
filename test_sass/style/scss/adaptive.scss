@@ -233,7 +233,7 @@
     .product2{
         background: none;
         .product-img{
-        @include bg_slajder(url(../../images/niemcy/berlin-wall.jpg));
+        @include bg_slajder(url(../../images/niemcy/berlin.jpg));
     }
 }
 

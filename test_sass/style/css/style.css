@@ -1066,7 +1066,7 @@ h2 {
   background-size: cover;
 }
 #niemcy-container .product2 {
-  background: url(../../images/niemcy/berlin-wall.jpg);
+  background: url(../../images/niemcy/berlin.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -1298,12 +1298,33 @@ h2 {
 }
 
 #reviews .review .review-image {
-  background: url("../../images/review1.jpg");
-  background-position: center;
-  background-size: cover;
   width: 100%;
   height: 30vh;
   border-radius: 2vw;
+}
+
+.rewiew1 .review-image {
+  background: url("../../images/opinie/review1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.rewiew2 .review-image {
+  background: url("../../images/opinie/review2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.rewiew3 .review-image {
+  background: url("../../images/opinie/review3.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.rewiew4 .review-image {
+  background: url("../../images/opinie/review4.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 #reviews .review .review-text .review-text-title {
