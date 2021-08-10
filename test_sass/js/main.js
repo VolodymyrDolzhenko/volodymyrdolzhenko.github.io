@@ -142,14 +142,22 @@ $('.category').click((e) => {
                     }
                   ]
     });
+
+    // GALLERY
     if( $(document).width() < 768 ) {
         $('#gallery_wrapper').slick({
+            centerMode:true,
                 arrows: false,
                 dots: true,
                 autoplay: true,
                 autoplaySpeed: 2800,
             });
+            if(('.gal').click()){
+                $('#gallery_wrapper').slick('refresh')
+            }
     };
+
+
 
 // opinie
 
@@ -164,7 +172,6 @@ $('.category').click((e) => {
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
-                    infinite: true,
                 }
                 },
                 {
@@ -172,7 +179,6 @@ $('.category').click((e) => {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    infinite: true,
                     arrows: false,
                 }
             }

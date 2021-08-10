@@ -715,17 +715,16 @@ $main_color: #13BA6C;
 
 #reviews {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 80vw;
     height: 70vh;
     margin: 0 auto;
     .review {
         display: flex;
         flex-direction: column;
-        width: 50vw;
+        width: 30%;
         height: 60vh;
-        margin-bottom: 2vh;
-        margin-right: 5vh;
+        margin: 0 2vh 2vh 2vh;
         .review-image {
             width: 100%;
             min-height: 20vh;

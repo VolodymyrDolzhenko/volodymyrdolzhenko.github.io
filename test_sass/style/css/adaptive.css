@@ -468,14 +468,6 @@
     width: 100%;
   }
 
-  .gallery_wrapper_grid-item2,
-.gallery_wrapper_grid-item4,
-.gallery_wrapper_grid-item5,
-.gallery_wrapper_grid-item6,
-.gallery_wrapper_grid-item3 {
-    display: none;
-  }
-
   #reservation {
     width: 90vw;
   }

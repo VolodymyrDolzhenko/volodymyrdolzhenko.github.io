@@ -1286,8 +1286,9 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 80vw;
   height: 70vh;
   margin: 0 auto;
@@ -1300,10 +1301,9 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50vw;
+  width: 30%;
   height: 60vh;
-  margin-bottom: 2vh;
-  margin-right: 5vh;
+  margin: 0 2vh 2vh 2vh;
 }
 #reviews .review .review-image {
   width: 100%;
