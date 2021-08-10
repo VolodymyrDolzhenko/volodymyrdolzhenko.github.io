@@ -54,7 +54,8 @@
       }
 
     .button{
-        width: 70vw;
+        width: 80vw;
+        height: 8vh;
         margin: 0 auto;
     &:hover{
         @include no-hover;
@@ -100,7 +101,8 @@
     }}
 }
 .button{
-    width: 70vw;
+    width: 80vw;
+    height: 8vh;
 }
 }
 
@@ -111,6 +113,7 @@
     .button{
         @include no-hover;
         width: 80vw;
+        height: 8vh;
         margin: 2vh auto;
     }
     .category-container{
@@ -303,7 +306,8 @@
             grid-column-end: 4;
         }
         .button {
-            width: 70vw;
+            width: 80vw;
+            height: 8vh;
             grid-column-start: 1;
             grid-column-end: 4;
             grid-row-start: 3;
@@ -354,7 +358,8 @@
         width: 90vw;
         #reserve-button{
             button{
-                width: 90%;
+                width: 80vw;
+                height: 8vh;
             &:hover{
                 @include no-hover;
             }}
@@ -377,6 +382,7 @@
     #opinie{
         min-height: 96vh;
         .button{
+            @include no-hover;
             width: 80vw;
         }
     }

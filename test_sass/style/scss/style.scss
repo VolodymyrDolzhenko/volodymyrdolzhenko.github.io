@@ -81,6 +81,7 @@ $main_color: #13BA6C;
     }
     &:hover{
         @include hover;
+        box-shadow: 0 0 1.6vw #00FF33;
     }
 }
 
@@ -517,6 +518,10 @@ $main_color: #13BA6C;
         @include button;
         background-color: $main_color;
         margin: 2vh auto;
+        width: 40vw;
+        &:hover{
+            @include hover;
+        }
     }
     .slajder_wrapper{
         margin: 0 auto;

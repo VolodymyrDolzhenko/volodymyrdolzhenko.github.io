@@ -60,7 +60,8 @@
   }
 
   .button {
-    width: 70vw;
+    width: 80vw;
+    height: 8vh;
     margin: 0 auto;
   }
   .button:hover {
@@ -129,7 +130,8 @@
     transition: 0s;
   }
   #kierunki .button {
-    width: 70vw;
+    width: 80vw;
+    height: 8vh;
   }
 
   #slajder .slajder_wrapper {
@@ -141,6 +143,7 @@
     -webkit-transition: 0s;
     transition: 0s;
     width: 80vw;
+    height: 8vh;
     margin: 2vh auto;
   }
   #slajder .category-container {
@@ -408,7 +411,8 @@
     grid-column-end: 4;
   }
   #kontakt .button {
-    width: 70vw;
+    width: 80vw;
+    height: 8vh;
     -ms-grid-column: 1;
         grid-column-start: 1;
     -ms-grid-column-span: 3;
@@ -472,7 +476,8 @@
     width: 90vw;
   }
   #reservation #reserve-button button {
-    width: 90%;
+    width: 80vw;
+    height: 8vh;
   }
   #reservation #reserve-button button:hover {
     -webkit-transform: scale(1);
@@ -499,6 +504,10 @@
     min-height: 96vh;
   }
   #opinie .button {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: 0s;
+    transition: 0s;
     width: 80vw;
   }
 

@@ -182,6 +182,8 @@ h2 {
           transform: scale(1.1);
   -webkit-transition: 1.3s;
   transition: 1.3s;
+  -webkit-box-shadow: 0 0 1.6vw #00FF33;
+          box-shadow: 0 0 1.6vw #00FF33;
 }
 
 #o_nas {
@@ -981,9 +983,18 @@ h2 {
   text-align: center;
   background-color: #13BA6C;
   margin: 2vh auto;
+  width: 40vw;
 }
 #slajder .button:active, #slajder .button:focus {
   outline: none;
+}
+#slajder .button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 1.3s;
+  transition: 1.3s;
+  -webkit-box-shadow: 0 0 1.6vw #00FF33;
+          box-shadow: 0 0 1.6vw #00FF33;
 }
 #slajder .button:hover {
   -webkit-transform: scale(1.1);
@@ -1487,6 +1498,8 @@ footer .nav_menu li {
           transform: scale(1.1);
   -webkit-transition: 1.3s;
   transition: 1.3s;
+  -webkit-box-shadow: 0 0 1.6vw #00FF33;
+          box-shadow: 0 0 1.6vw #00FF33;
 }
 #reserve-button button:hover {
   -webkit-transform: scale(1.1);
