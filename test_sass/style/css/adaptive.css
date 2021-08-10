@@ -460,12 +460,19 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  #gallery_wrapper .gallery_wrapper_grid {
-    display: block;
-  }
-  #gallery_wrapper .gallery_wrapper_grid img {
+  #gallery_wrapper img {
     height: 70vh;
     width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .gallery_wrapper_grid-item2,
+.gallery_wrapper_grid-item4,
+.gallery_wrapper_grid-item5,
+.gallery_wrapper_grid-item6,
+.gallery_wrapper_grid-item3 {
+    display: none;
   }
 
   #reservation {

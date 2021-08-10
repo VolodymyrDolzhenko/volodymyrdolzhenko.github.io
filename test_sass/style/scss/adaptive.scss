@@ -341,22 +341,21 @@
     #gallery_wrapper{
         display: flex;
         flex-direction: column;
-        .gallery_wrapper_grid{
-            display: block;
             img{
                 height: 70vh;
                 width: 100%;
+                object-fit: cover;
             }
-        }
+
     }
 
-    // .gallery_wrapper_grid-item2,
-    // .gallery_wrapper_grid-item4,
-    // .gallery_wrapper_grid-item5,
-    // .gallery_wrapper_grid-item6,
-    // .gallery_wrapper_grid-item3{
-    //     display: none;
-    // }
+    .gallery_wrapper_grid-item2,
+    .gallery_wrapper_grid-item4,
+    .gallery_wrapper_grid-item5,
+    .gallery_wrapper_grid-item6,
+    .gallery_wrapper_grid-item3{
+        display: none;
+    }
 
     #reservation{
         width: 90vw;
