@@ -224,3 +224,13 @@ $('.category').click((e) => {
 })
 
 // Opinie
+
+$('.open-module-opinie').click(() => {
+    $('#opinie-container').css('display', 'flex');
+});
+
+$('#opinie-cancel-close, #opinie-container').click((e) => {
+    if (e.target.id === 'opinie-container'|| e.target.id === 'opinie-cancel-close') {
+        $('#opinie-container').hide();
+    }
+});
