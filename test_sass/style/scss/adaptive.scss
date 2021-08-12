@@ -42,9 +42,9 @@
 
       .nav-link {
           text-align:center;
-          width: 40vw;
-          margin: 1vh 0;
-          text-shadow: 0 0 1.6vw #fff;
+          width: 100%;
+          margin-top: 0;
+          margin-bottom: 1vh;
       }
 
       .toggleButton {
@@ -368,6 +368,10 @@
                 @include no-hover;
             }}
         }
+        #reservation-cancel-close {
+            top: 2.5%;
+            right: 2.5%;
+        }
     }
     #reserve .reserve-input  {
         width: 90%;
@@ -375,6 +379,8 @@
             width: 100%;
         }
     }
+
+
 
     footer{
         .nav_menu{
@@ -419,74 +425,15 @@
 
 // zostawienie opinie-input
 
-
-#opinie-container{
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 9999;
-    justify-content: center;
-    align-items: center;
-    display: none;
-}
-
     #opinie-container-wrapper {
-    border-radius: 16px;
-    background-color: #FFFFFF;
-    box-shadow: 0 0 30px 8.33px rgba(255, 255, 255, 1);
     width: 90vw;
     height: 90vh;
-    padding: 3%;
-    position: relative;
-    h2{
-    text-align: center;
-    margin-top: 0;
-    }
-
 }
-    #opinie-cancel-close {
-        position: absolute;
-        top: 5%;
-        right: 2.5%;
-        cursor: pointer;
-    }
-    #opinie-content{
-        margin-bottom: 5vh;
-    }
 
-    #opinie-form{
-        width: 100%;
-        height: 70%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 30% 40% auto;
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-        justify-items: center;
-        background-color: lightblue;
-        .name-input{
-            grid-area: 1 / 1 / 2 / 2;
-        }
-        .wycieczka-input{
-            grid-area: 1 / 2 / 2 / 3;
-        }
-        .wycieczka-description{
-            width: 100%;
-            height: 300px;
-            background-color: lightgreen;
-            grid-area: 2 / 1 / 3 / 3;
-        }
-        .review-choose-img{
-            width: 100%;
-            height: 300px;
-            background-color: lightyellow;
-            grid-area: 3 / 1 / 4 / 3;
-        }
-    }
-
+#opinie-cancel-close {
+    top: 2.5%;
+    right: 2.5%;
+}
     .opinie-input{
         display: flex;
         flex-direction: column;
