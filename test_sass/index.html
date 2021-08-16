@@ -621,33 +621,34 @@
             <button type="button" name="button" class="button main_button open-module-opinie">Zostawić opinię</button>
             <div id="opinie-container">
                     <div id="opinie-container-wrapper">
-                        <div>
-                            <i id="opinie-cancel-close" class="fa fa-times" aria-hidden="true"></i>
-                        </div>
+                        <i id="opinie-cancel-close" class="fa fa-times" aria-hidden="true"></i>
                         <h2 class="block-title">Zostawić opinię</h2>
-                            <form action="#" id="opinie-form" method="post">
-                                <div class="opinie-input name-input">
-                                    <label for="review-name">Twoję imiję</label>
-                                    <input type="text" name="review-name" id="review-name">
-                                </div>
-                                <div class="opinie-input wycieczka-input">
-                                    <label for="opinie-wycieczka">Wycieczka</label>
-                                    <select name="opinie-wycieczka" id="opinie-wycieczka" class="form-control">
-                                        <option value="Morskie_oko">Morskie oko</option>
-                                        <option value="Praga">Praga</option>
-                                        <option value="Berlin">Berlin</option>
-                                        <option value="Gdansk">Gdańsk</option>
-                                        <option value="Krakow">Kraków</option>
-                                        <option value="Drezno">Drezno</option>
-                                    </select>
-                                </div>
-                                <div class="wycieczka-description">
-                                    
-                                </div>
-                                <div class="review-choose-img">
-                                    
-                                </div>
-                            </form>
+                        <form action="#" id="opinie-form" method="post">
+                            <div class="opinie-input name-input">
+                                <label for="review-name">Twoję imiję</label>
+                                <input type="text" name="review-name" id="review-name" placeholder="imię">
+                            </div>
+                            <div class="opinie-input wycieczka-input">
+                                <label for="opinie-wycieczka">Wycieczka</label>
+                                <select name="opinie-wycieczka" id="opinie-wycieczka" class="form-control">
+                                    <option value="Morskie_oko">Morskie oko</option>
+                                    <option value="Praga">Praga</option>
+                                    <option value="Berlin">Berlin</option>
+                                    <option value="Gdansk">Gdańsk</option>
+                                    <option value="Krakow">Kraków</option>
+                                    <option value="Drezno">Drezno</option>
+                                </select>
+                            </div>
+                            <div class="opinie-input wycieczka-description">
+                                <label for="wycieczka-description-text">Twoja opinia</label>
+                                <input type="text" name="review-name" id="wycieczka-description-text" placeholder="max. 450 symboli">
+                            </div>
+                            <div class="opinie-input review-choose-img">
+                                <label for="wycieczka-description-text">Twoja opinia</label>
+                                <input type="text" name="review-name" id="wycieczka-description-text" placeholder="max. 450 symboli">
+                            </div>
+                        </form>
+                        <button id="zostawic-opinie-button" type="submit" class="button main_button">Zostawić opinie</button>
                     </div>
             </div>
 
@@ -736,19 +737,19 @@
                 <form action="#" id="reserve" method="post">
                             <div class="reserve-input">
                                 <label for="name">Imię</label>
-                                    <input type="text" name="name" id="name">
+                                    <input type="text" name="name" id="name" placeholder="imię" required>
                             </div>
                             <div class="reserve-input">
                                 <label for="nazwisko">Nazwisko</label>
-                                    <input type="text" name="nazwisko" id="nazwisko">
+                                    <input type="text" name="nazwisko" id="nazwisko" placeholder="nazwisko" required>
                             </div>
                             <div class="reserve-input">
                                 <label for="phone">E-mail</label>
-                                    <input type="text" name="phone" id="phone">
+                                    <input type="tel" name="phone" id="phone" required>
                             </div>
                             <div class="reserve-input">
                                 <label for="time">Numer telefonu</label>
-                                    <input type="text" name="time" id="time">
+                                    <input type="tel" name="time" id="time" required>
                             </div>
                             <p id="reserve-error">
                                 Uzupełni prawidłowo wszystkie pola!
@@ -757,7 +758,7 @@
             </div>
             <div id="reserve-button">
                 <button type="submit" class="button main_button">Otrzymać konsultację</button>
-                </div>
+            </div>
             <div id="reservation-sent">
                 <h2 class="block-title">спасибо за то, что выбрали нас!</h2>
                 <div id="reservation-sent-text">

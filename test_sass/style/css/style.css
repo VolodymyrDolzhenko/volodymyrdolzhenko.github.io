@@ -1385,18 +1385,20 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #opinie-container-wrapper {
   border-radius: 16px;
-  background-color: #FFFFFF;
+  background-color: pink;
   -webkit-box-shadow: 0 0 30px 8.33px white;
           box-shadow: 0 0 30px 8.33px white;
   width: 61vw;
   min-height: 70vh;
-  padding: 3%;
   position: relative;
+  padding: 3% 3% 0 3%;
 }
 #opinie-container-wrapper h2 {
   text-align: center;
@@ -1417,8 +1419,8 @@ h2 {
   display: grid;
   -ms-grid-columns: 1fr 0px 1fr;
   grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: 30% 0px 40% 0px auto;
-  grid-template-rows: 30% 40% auto;
+  -ms-grid-rows: 15% 0px 55% 0px auto;
+  grid-template-rows: 15% 55% auto;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   justify-items: center;
@@ -1460,6 +1462,7 @@ h2 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-area: 1/1/2/2;
+  background-color: purple;
 }
 #opinie-form .wycieczka-input {
   -ms-grid-row: 1;
@@ -1467,10 +1470,9 @@ h2 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-area: 1/2/2/3;
+  background-color: purple;
 }
 #opinie-form .wycieczka-description {
-  width: 100%;
-  height: 30%;
   background-color: lightgreen;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
@@ -1479,8 +1481,6 @@ h2 {
   grid-area: 2/1/3/3;
 }
 #opinie-form .review-choose-img {
-  width: 100%;
-  height: 30%;
   background-color: lightyellow;
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
@@ -1497,8 +1497,12 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 20vw;
-  height: 10vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .opinie-input label {
   font-weight: 600;
