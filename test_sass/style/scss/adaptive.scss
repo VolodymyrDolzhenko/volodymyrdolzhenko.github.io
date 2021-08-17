@@ -11,7 +11,7 @@
     border-radius: 1vw;
 }
 
-@media screen and (max-width: 767px), (max-width: 767px) and (orientation: landscape){
+@media screen and (max-width: 767px), (hover: none) and (pointer: coarse){
     .navbar .navbar_logo {
       width: 100%;
     &:hover{
@@ -434,15 +434,7 @@
     top: 2.5%;
     right: 2.5%;
 }
-    .opinie-input{
-        display: flex;
-        flex-direction: column;
-        width: 20vw;
-        height: 10vh;
-        label{
-            font-weight: 600;
-        }
-    }
+
 
 @media screen and (max-width: 1400px){
 .product-content-properties {

@@ -1,4 +1,4 @@
-@media screen and (max-width: 767px), (max-width: 767px) and (orientation: landscape) {
+@media screen and (max-width: 767px), (hover: none) and (pointer: coarse) {
   .navbar .navbar_logo {
     width: 100%;
   }
@@ -548,21 +548,6 @@
 #opinie-cancel-close {
   top: 2.5%;
   right: 2.5%;
-}
-
-.opinie-input {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 20vw;
-  height: 10vh;
-}
-.opinie-input label {
-  font-weight: 600;
 }
 
 @media screen and (max-width: 1400px) {

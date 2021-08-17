@@ -1415,97 +1415,43 @@ h2 {
 #opinie-form {
   width: 100%;
   height: 70%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 0px 1fr;
-  grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: 15% 0px 55% 0px auto;
-  grid-template-rows: 15% 55% auto;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  justify-items: center;
-  background-color: lightblue;
 }
-
-#opinie-form > *:nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-}
-
-#opinie-form > *:nth-child(2) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-}
-
-#opinie-form > *:nth-child(3) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-}
-
-#opinie-form > *:nth-child(4) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-}
-
-#opinie-form > *:nth-child(5) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-}
-
-#opinie-form > *:nth-child(6) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 3;
-}
-#opinie-form .name-input {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-area: 1/1/2/2;
-  background-color: purple;
-}
-#opinie-form .wycieczka-input {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-area: 1/2/2/3;
-  background-color: purple;
-}
-#opinie-form .wycieczka-description {
-  background-color: lightgreen;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: 2/1/3/3;
-}
-#opinie-form .review-choose-img {
-  background-color: lightyellow;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: 3/1/4/3;
+#opinie-form .top-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 2vh;
 }
 
 .opinie-input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
+  text-align: left;
 }
-.opinie-input label {
-  font-weight: 600;
+.opinie-input input,
+.opinie-input select {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 10px;
+  min-width: 25vw;
+  height: 5vh;
+  background: transparent;
+  outline: 0;
+  padding: 12px 20px;
 }
 
 footer {
