@@ -1415,6 +1415,7 @@ h2 {
 #opinie-form {
   width: 100%;
   height: 70%;
+  font-size: 2vh;
 }
 #opinie-form .top-input {
   display: -webkit-box;
@@ -1439,11 +1440,13 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  align-items: center;
-  text-align: left;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .opinie-input input,
-.opinie-input select {
+.opinie-input select,
+.opinie-input textarea {
   border-width: 1px;
   border-style: solid;
   border-radius: 10px;
@@ -1452,6 +1455,41 @@ h2 {
   background: transparent;
   outline: 0;
   padding: 12px 20px;
+  font-size: 2vh;
+}
+.opinie-input label {
+  margin-bottom: 1vh;
+}
+
+.rewiew-wycieczka-description {
+  height: 35%;
+  margin-bottom: 2vh;
+}
+.rewiew-wycieczka-description textarea {
+  width: 100%;
+  resize: none;
+  height: 100%;
+}
+
+.review-choose-img {
+  height: 35%;
+}
+.review-choose-img input {
+  width: 100%;
+  height: 100%;
+}
+
+#wycieczka-description-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  align-items: center;
 }
 
 footer {
