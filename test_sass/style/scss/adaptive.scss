@@ -397,6 +397,22 @@
         }
     }
 
+#opinie-form{
+    .top-input{
+        flex-direction: column;
+    }
+}
+
+.opinie-input{
+
+    input,
+    select,
+    textarea{
+        width: 80vw;
+    }
+    
+}
+
     #reviews {
         .review {
             width: 100%;
