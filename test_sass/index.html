@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="style/slick.css">
     <link rel="stylesheet" href="style/slick-theme.css">
     <link href="style/fontawesome-free-5.15.4-web/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css">
     <title>WroTravel</title>
 </head>
 
@@ -617,7 +618,7 @@
                     <div id="opinie-container-wrapper">
                         <i id="opinie-cancel-close" class="fa fa-times" aria-hidden="true"></i>
                         <h2 class="block-title">Zostawić opinię</h2>
-                        <form action="#" id="opinie-form" method="post">
+                        <form action="#" id="opinie-form" class="dropzone" method="post">
                             <div class="top-input">
                                 <div class="opinie-input name-input">
                                     <label for="review-name">Twoję imiję</label>
@@ -639,16 +640,16 @@
                                 <label for="wycieczka-description-text">Twoja opinia</label>
                                 <textarea id="wycieczka-description-text" placeholder="max. 450 symboli" rows="5" cols="50"></textarea>
                             </div>
-                            <div class="opinie-input review-choose-img">
+                            <div class="fallback opinie-input review-choose-img">
                                 <label for="wycieczka-description-img">Twoja opinia</label>
-                                <input type="file" id="wycieczka-description-img" accept="image/png, image/jpeg">
+                                <input type="file" name="file" accept="image/png, image/jpeg">
                             </div>
                         </form>
                         <button id="zostawic-opinie-button" type="submit" class="button main_button">Zostawić opinie</button>
                     </div>
             </div>
 
-        <!--<div id="opinie-container">
+            <!--<div id="opinie-container">
                 <div id="opinie-container-wrapper">
 
                     <div id="reservation-content">
@@ -754,6 +755,7 @@
     <script src="js/main.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/fslightbox.js"></script>
+    <script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
     <!-- End Scripts module -->
 </body>
 </html>
