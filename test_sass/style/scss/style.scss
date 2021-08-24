@@ -875,6 +875,11 @@ $main_color: #13BA6C;
             width: 100%;
             height: 100%;
 
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 10px;
+            background: transparent;
+            outline: 0;
         }
     }
 
