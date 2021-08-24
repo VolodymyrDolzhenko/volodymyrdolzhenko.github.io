@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="style/slick.css">
     <link rel="stylesheet" href="style/slick-theme.css">
     <link href="style/fontawesome-free-5.15.4-web/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css">
     <title>WroTravel</title>
 </head>
 
@@ -614,62 +613,55 @@
                     </div>
             </div>
             <button type="button" name="button" class="button main_button open-module-opinie">Zostawić opinię</button>
-
             <div id="opinie-container">
-                    <div id="opinie-container-wrapper">
-                        <i id="opinie-cancel-close" class="fa fa-times" aria-hidden="true"></i>
-                        <h2 class="block-title">Zostawić opinię</h2>
-                        <form action="#" id="opinie-form" class="dropzone" method="post">
-                            <div class="top-input">
-                                <div class="opinie-input name-input">
-                                    <label for="review-name">Twoję imiję</label>
-                                    <input type="text" name="review-name" id="review-name" placeholder="imię">
-                                </div>
-                                <div class="opinie-input rewiew-wycieczka-input">
-                                    <label for="opinie-wycieczka">Wycieczka</label>
-                                    <select name="opinie-wycieczka" id="opinie-wycieczka" class="form-control">
-                                        <option value="Morskie_oko">Morskie oko</option>
-                                        <option value="Praga">Praga</option>
-                                        <option value="Berlin">Berlin</option>
-                                        <option value="Gdansk">Gdańsk</option>
-                                        <option value="Krakow">Kraków</option>
-                                        <option value="Drezno">Drezno</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="opinie-input rewiew-wycieczka-description">
-                                <label for="wycieczka-description-text">Twoja opinia</label>
-                                <textarea id="wycieczka-description-text" placeholder="max. 450 symboli" rows="5" cols="50"></textarea>
-                            </div>
-                            <div class="fallback opinie-input review-choose-img">
-                                <label for="wycieczka-description-img">Twoja opinia</label>
-                                <input type="file" name="file" accept="image/png, image/jpeg">
-                            </div>
-                        </form>
-                        <button id="zostawic-opinie-button" type="submit" class="button main_button">Zostawić opinie</button>
-                    </div>
-            </div>
-
-            <!--<div id="opinie-container">
                 <div id="opinie-container-wrapper">
+                    <i id="opinie-cancel-close" class="fa fa-times" aria-hidden="true"></i>
+                    <h2 class="block-title">Zostawić opinię</h2>
+                    <form action="#" id="opinie-form" class="" method="post">
+                        <div class="top-input">
+                            <div class="opinie-input name-input">
+                                <label for="opinie-name">Twoję imię</label>
+                                <input type="text" name="opinie-name" id="opinie-name" placeholder="imię">
+                            </div>
+                            <div class="opinie-input rewiew-wycieczka-input">
+                                <label for="opinie-wycieczka">Wycieczka</label>
+                                <select name="opinie-wycieczka" id="opinie-wycieczka" class="form-control">
+                                    <option value="Morskie_oko">Morskie oko</option>
+                                    <option value="Praga">Praga</option>
+                                    <option value="Berlin">Berlin</option>
+                                    <option value="Gdansk">Gdańsk</option>
+                                    <option value="Krakow">Kraków</option>
+                                    <option value="Drezno">Drezno</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="opinie-input rewiew-wycieczka-description">
+                            <label for="wycieczka-description-text">Twoja opinia</label>
+                            <textarea id="wycieczka-description-text" placeholder="max. 450 symboli" rows="5" cols="50"></textarea>
+                        </div>
+                        <div class="opinie-input review-choose-img">
+                            <label for="wycieczka-description-img">Twoje zdjęcie</label>
+                            <input type="file" name="file" accept="image/png, image/jpeg">
+                        </div>
+                    </form>
+                    <button id="zostawic-opinie-button" type="submit" class="button main_button">Zostawić opinie</button>
+                </div>
+                <div id="opinie-content">
+                    <form action="#" id="reserve" method="post">
+                        <p id="opinie-error">
+                            Uzupełni prawidłowo wszystkie pola!
+                        </p>
+                    </form>
 
-                    <div id="reservation-content">
-                        <form action="#" id="reserve" method="post">
-                                    <p id="reserve-error">
-                                        Заполните правильно все поля
-                                    </p>
-                        </form>
-
-                    <div id="reservation-sent">
-                        <h2 class="block-title">спасибо за то, что выбрали нас!</h2>
-                        <div id="reservation-sent-text">
-                                    Администратор BURGERCLUB свяжется с вами в течение 15 минут,
-                                    чтобы подтвердить бронирование
-                    </div>
+                    <div id="opinie-sent">
+                        <h2 class="block-title">Dziękujęmy!</h2>
+                        <div id="opinie-sent-text">
+                            Wkrótce zadzwonimy do Was!
+                        </div>
                     </div>
                 </div>
-            </div> -->
-    </section>
+            </section>
+
 
 
     <section id="kontakt">
@@ -727,15 +719,10 @@
                             </p>
                         </form>
             </div>
-            <div id="reserve-button">
-                <button type="submit" class="button main_button">Otrzymać konsultację</button>
-            </div>
+                <button id="reserve-button" type="submit" class="button main_button">Otrzymać konsultację</button>
             <div id="reservation-sent">
-                <h2 class="block-title">спасибо за то, что выбрали нас!</h2>
-                <div id="reservation-sent-text">
-                            Администратор BURGERCLUB свяжется с вами в течение 15 минут,
-                            чтобы подтвердить бронирование
-                        </div>
+                <h2 class="block-title">Dziękujemy!</h2>
+                <div id="reservation-sent-text">Wkrótce do Was oddzwonimy!</div>
             </div>
         </div>
     </div>
@@ -756,7 +743,6 @@
     <script src="js/main.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/fslightbox.js"></script>
-    <script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
     <!-- End Scripts module -->
 </body>
 </html>

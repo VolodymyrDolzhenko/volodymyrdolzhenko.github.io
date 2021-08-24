@@ -197,7 +197,7 @@ $('.category').click((e) => {
         }
     });
 
-    $('#reserve-button > button').click(() => {
+    $('#reserve-button').click(() => {
         let name = $('#name');
         let nazwisko = $('#nazwisko');
         let phone = $('#phone');
@@ -232,5 +232,29 @@ $('.open-module-opinie').click(() => {
 $('#opinie-cancel-close, #opinie-container').click((e) => {
     if (e.target.id === 'opinie-container'|| e.target.id === 'opinie-cancel-close') {
         $('#opinie-container').hide();
+    }
+});
+
+$('#opinie-button').click(() => {
+    let opinie_name = $('#opinie-name');
+    let opinie_wycieczka = $('#opinie-wycieczka');
+    let opinie_text = $('#wycieczka-description-text');
+
+    if (opinie_name.val() && opinie_wycieczka.val() && opinie_text.val()) {
+        $.ajax({
+            type: 'POST',
+            url: 'mail.php',
+            data: 'opinie-name=' + opinie-name.val() + '&opinie-wycieczka=' + opinie-wycieczka.val() + '&opinie_text=' + opinie_text.val(),
+            success: () => {
+                $('#opinie-sent').show();
+                $('#opinie-content').hide();
+            },
+            error: () => {
+                $('#opinie-container').hide();
+                alert('Błąd. Zadzwoń, proszę, pod numer ..');
+            }
+        });
+    } else {
+        $('#opinie-error').show();
     }
 });
