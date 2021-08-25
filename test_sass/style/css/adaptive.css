@@ -479,11 +479,11 @@
   #reservation {
     width: 90vw;
   }
-  #reservation #reserve-button button {
+  #reservation #reserve-button {
     width: 80vw;
     height: 8vh;
   }
-  #reservation #reserve-button button:hover {
+  #reservation #reserve-button:hover {
     -webkit-transform: scale(1);
             transform: scale(1);
     -webkit-transition: 0s;

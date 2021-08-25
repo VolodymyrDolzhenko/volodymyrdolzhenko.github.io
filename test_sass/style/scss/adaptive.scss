@@ -361,12 +361,11 @@
     #reservation{
         width: 90vw;
         #reserve-button{
-            button{
                 width: 80vw;
                 height: 8vh;
             &:hover{
                 @include no-hover;
-            }}
+            }
         }
         #reservation-cancel-close {
             top: 2.5%;
