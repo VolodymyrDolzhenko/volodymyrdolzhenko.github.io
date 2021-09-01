@@ -1214,7 +1214,8 @@ h2 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-area: 3/1/4/2;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
+  margin-bottom: 1vh;
 }
 .product-content .product-content-properties {
   -ms-grid-row: 3;
